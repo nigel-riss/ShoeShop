@@ -9,7 +9,7 @@ const browserSync = require('browser-sync').create();
 // Paths
 const dirs = {
   pug: './src/pug/**/*.pug',
-  // scss: './src/scss/**/*.scss',
+  scss: './src/scss/**/*.scss',
   // styles: './src/scss/styles.scss',
   // js: './src/js/**/*.js',
   dist: './dist'
@@ -28,7 +28,9 @@ let pugRender = () => gulp.src(dirs.pug)
  * Compiles scss files to styles.css
  */
 let styles = () => {
-
+  gulp.src(dirs.scss)
+  .pipe(sass())
+  .pipe(sass.dest(dirs.dist))
 };
 
 
