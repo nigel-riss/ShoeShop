@@ -3,14 +3,14 @@
 const gulp = require('gulp');
 const pug = require('gulp-pug');
 const browserSync = require('browser-sync').create();
-// const sass = require('gulp-sass');
+const sass = require('gulp-sass');
 
 
 // Paths
 const dirs = {
   pug: './src/pug/**/*.pug',
   scss: './src/scss/**/*.scss',
-  // styles: './src/scss/styles.scss',
+  styles: './src/scss/styles.scss',
   // js: './src/js/**/*.js',
   dist: './dist'
 };
@@ -27,11 +27,10 @@ let pugRender = () => gulp.src(dirs.pug)
 /**
  * Compiles scss files to styles.css
  */
-let styles = () => {
-  gulp.src(dirs.scss)
+let styles = () => gulp.src(dirs.styles)
   .pipe(sass())
-  .pipe(sass.dest(dirs.dist))
-};
+  .pipe(gulp.dest(dirs.dist))
+  .pipe(browserSync.reload({stream: true}));
 
 
  /**
@@ -73,6 +72,7 @@ let watch = () => {
   browserSyncInit();
   gulp.watch(dirs.pug, gulp.series(pugRender, browserSyncReload));
   gulp.watch(dirs.scss, gulp.parallel(styles));
+  // gulp.watch(dirs.scss, gulp.series(styles));
   // gulp.watch(dirs.js, gulp.series(scripts, browserSyncReload));
 };
 
