@@ -12,7 +12,7 @@ const dirs = {
   scss: './src/scss/**/*.scss',
   styles: './src/scss/styles.scss',
   // js: './src/js/**/*.js',
-  dist: './dist'
+  dist: './docs'
 };
 
 
