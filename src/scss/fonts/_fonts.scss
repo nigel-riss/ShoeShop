@@ -22,3 +22,17 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Rex';
+    src: url('./fonts/Rex-Bold.woff2') format('woff2'),
+        url('./fonts/Rex-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Rex Bold Inline';
+    src: url('./fonts/subset-RexBoldInline.woff2') format('woff2'),
+        url('./fonts/subset-RexBoldInline.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;

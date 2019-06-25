@@ -14,6 +14,7 @@ const dirs = {
   styles: './src/scss/styles.scss',
   // js: './src/js/**/*.js',
   dist: './docs',
+  svg: './src/img/**/*.svg',
 };
 
 
@@ -75,6 +76,7 @@ let browserSyncReload = (done) => {
 let watch = () => {
   browserSyncInit();
   gulp.watch(dirs.pug, gulp.series(pugRender, browserSyncReload));
+  gulp.watch(dirs.svg, gulp.series(pugRender, browserSyncReload));
   gulp.watch(dirs.scss, gulp.parallel(styles));
   // gulp.watch(dirs.scss, gulp.series(styles));
   // gulp.watch(dirs.js, gulp.series(scripts, browserSyncReload));
