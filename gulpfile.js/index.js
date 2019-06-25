@@ -2,6 +2,7 @@
 
 const gulp = require('gulp');
 const pug = require('gulp-pug');
+const embedSVG = require('gulp-embed-svg');
 const browserSync = require('browser-sync').create();
 const sass = require('gulp-sass');
 
@@ -12,7 +13,7 @@ const dirs = {
   scss: './src/scss/**/*.scss',
   styles: './src/scss/styles.scss',
   // js: './src/js/**/*.js',
-  dist: './docs'
+  dist: './docs',
 };
 
 
@@ -21,6 +22,9 @@ const dirs = {
  */
 let pugRender = () => gulp.src(dirs.pug)
   .pipe(pug())
+  .pipe(embedSVG({
+    root: './src/',
+  }))
   .pipe(gulp.dest(dirs.dist));
 
 
