@@ -1,0 +1,36 @@
+html {
+    // typography
+    font-size: 16px;
+}
+
+body {
+    // box model
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    // box model
+    box-sizing: border-box;
+}
+
+// body::-webkit-scrollbar {
+//     // box model
+//     width: 8px;
+
+//     & * {
+//         background: transparent;
+//     }
+
+//     &-thumb {
+//         // visual
+//         background: $golden;
+//         border-radius: 10px;
+//     }
+    
+//     &-track {
+//         // visual
+//         background: transparent !important;
+//     }
+// }
