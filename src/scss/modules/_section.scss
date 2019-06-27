@@ -1,11 +1,15 @@
 .section {
-
+    // box model
+    margin-bottom: 120px;
 }
 
 .section__header {
-    
+    // box model
+    margin-bottom: 160px;
 }
 
 .section__content {
-
+    // box model
+    margin: 0 auto;
+    max-width: 1200px;
 }

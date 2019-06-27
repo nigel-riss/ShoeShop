@@ -165,7 +165,7 @@ body {
 @font-face {
   font-family: 'Montserrat';
   src: url("./fonts/subset-Montserrat-SemiBold.woff2") format("woff2"), url("./fonts/subset-Montserrat-SemiBold.woff") format("woff");
-  font-weight: 600;
+  font-weight: 700;
   font-style: normal; }
 
 @font-face {
@@ -185,6 +185,16 @@ body {
   src: url("./fonts/subset-RexBoldInline.woff2") format("woff2"), url("./fonts/subset-RexBoldInline.woff") format("woff");
   font-weight: 700;
   font-style: normal; }
+
+.section {
+  margin-bottom: 120px; }
+
+.section__header {
+  margin-bottom: 160px; }
+
+.section__content {
+  margin: 0 auto;
+  max-width: 1200px; }
 
 .section-header {
   transform: skewY(-15deg);
@@ -280,3 +290,42 @@ body {
 
 .lamp-sum__icon svg {
   fill: #a8acb9; }
+
+.timeline {
+  position: relative;
+  padding: 40px; }
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  height: 100%;
+  width: 3px;
+  background-image: linear-gradient(rgba(242, 226, 201, 0), #f2e2c9, #f2e2c9, #f2e2c9, rgba(242, 226, 201, 0)); }
+
+.timeline__date {
+  position: relative;
+  color: #d6a354;
+  font-family: "Rex", Arial, Helvetica, sans-serif;
+  font-size: 3.5rem; }
+
+.timeline__date::before {
+  content: "";
+  position: absolute;
+  left: -43px;
+  top: 1.75rem;
+  display: block;
+  height: 9px;
+  width: 9px;
+  background-color: #d6a354;
+  border-radius: 50%; }
+
+.timeline__desc {
+  margin: 0;
+  margin-bottom: 40px; }
+
+.timeline__desc strong {
+  font-weight: 700;
+  text-transform: uppercase; }
