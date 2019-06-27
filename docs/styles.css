@@ -402,7 +402,7 @@ body {
 
 .feature {
   border: 2px dashed fuchsia;
-  height: 300px;
+  min-height: 300px;
   margin-bottom: 60px;
   padding: 30px;
   transition: all 0.25s ease-out;
