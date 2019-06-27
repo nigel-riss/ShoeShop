@@ -1,11 +1,156 @@
-.section-header {
+// *** LEGACY ***
 
+.section-header {
+    // positioning
+    transform: skewY(-15deg);
+    // z-index: 8;
+
+    // box model
+    // width: 90%;
+    // max-width: 325px;
+    width: 325px;
+
+    @include atTablet {
+        // box model
+        max-width: inherit;
+        width: 350px;
+    }
+
+    @include atDesktopL {
+        // box model
+        width: 500px;
+    }
 }
 
 .section-header__title {
+    // positioning
+    position: relative;
+    z-index: 2;
 
+    // box model
+    margin: 0;
+    margin-bottom: 0.25em;
+    padding: 20px;
+
+    // typography
+    color: $white;
+    font-family: $titleFont;
+    font-size: 2.5rem;
+    line-height: 1.25;
+
+    // visual
+    background-color: $golden;
+    box-shadow: -15px 10px 40px -10px rgba($dark, 0.5);
+    text-shadow: -3px 2px 0 $darkGold;
+    
+    @include atTablet {
+        // box model
+        padding: 20px 40px;
+        
+        // typography
+        font-size: 3rem;
+        
+        // visual
+        box-shadow: -5px 10px 15px 0 rgba($dark, 0.25);
+        text-shadow: -4px 3px 0 $darkGold;
+    }
+
+    @include atDesktopL {
+        // box model
+        padding: 25px 50px;
+        padding-left: 120px;
+
+        // typography
+        font-size: 3.5rem;
+    }
+}
+
+// grunge decorative element
+.section-header__title::after {
+    content: '';
+
+    // positioning
+    position: absolute;
+    right: -20px;
+    top: 0;
+
+    // box model
+    height: 100%;
+    width: 60px;
+
+    // visual
+    background-image: url('./img/deco/gold-v-grunge.svg');
+    background-size: 60px;
+    background-repeat: repeat-y;
+    background-position: center center;
 }
 
 .section-header__subtitle {
+    // positioning
+    position: absolute;
+    z-index: 2;
 
+    // box model
+    display: flex;
+    flex-direction: row;
+    flex-grow: 20;
+    flex-shrink: 1;
+    margin: 0;
+    width: 100%;
+    
+    // typography
+    color: $darkGold;
+    font-family: $titleFont;
+    font-size: 1.75rem;
+    
+    @include atTablet {
+        // box model
+        padding-right: 20px;
+        
+        // typography
+        font-size: 2rem;
+    }
+
+    @include atDesktopS {
+        // box model
+        padding-right: 40px;
+        
+        // typography
+        font-size: 1.5rem;
+    }
+
+    @include atDesktopL {
+        // box model
+        padding-right: 120px;
+        padding-right: 110px;
+
+        // typography
+        font-size: 2rem;
+    }
+}
+
+.section-header__subtitle::before {
+    content: "";
+
+    // positioning
+    position: relative;
+    left: -10px;
+    top: 0.75rem;
+
+    // box model
+    flex-grow: 1;
+    flex-shrink: 20;
+    height: 2px;
+    margin-right: 5px;
+
+    // visual
+    background-color: $darkGold;
+
+    @include atTablet {
+        // positioning
+        top: 1rem;
+
+        // box model
+        height: 3px;
+    }
 }
