@@ -366,11 +366,36 @@ body {
   content: "— "; }
 
 .indicator {
-  border: 1px solid red;
-  position: relative; }
+  position: relative;
+  margin-bottom: 40px;
+  min-height: 120px;
+  padding-left: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-transform: uppercase; }
+
+.indicator__value {
+  color: #d6a354;
+  font-size: 4rem;
+  font-weight: 900; }
+
+.indicator__value small {
+  font-size: 0.5em; }
+
+.indicator__desc {
+  line-height: 1.5; }
+
+.indicator__desc em {
+  color: #d6a354;
+  font-style: normal; }
 
 .indicator__icon {
-  position: absolute; }
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 110px;
+  width: 110px; }
 
 .indicator__icon svg {
   fill: #a8acb9; }

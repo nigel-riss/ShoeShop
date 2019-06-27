@@ -1,23 +1,53 @@
 .indicator {
-    border: 1px solid red;
     // positioning
     position: relative;
 
+    // box model
+    margin-bottom: 40px;
+    min-height: 120px;
+    padding-left: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
     // typography
-    
+    text-transform: uppercase;
 }
 
 .indicator__value {
+    // typography
+    color: $golden;
+    font-size: 4rem;
+    font-weight: 900;
+}
 
+.indicator__value small {
+    // typography
+    font-size: 0.5em;
 }
 
 .indicator__desc {
+    // typography
+    line-height: 1.5;
+}
 
+.indicator__desc em {
+    // typography
+    color: $golden;
+    font-style: normal;
 }
 
 .indicator__icon {
     // positioning
     position: absolute;
+    bottom: 0;
+    left: 0;
+
+    // box model
+    height: 110px;
+    width: 110px;
+
+    // border: 2px dashed fuchsia;
 }
 
 .indicator__icon svg {
