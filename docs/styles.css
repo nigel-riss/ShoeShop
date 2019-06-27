@@ -145,6 +145,7 @@ template {
   display: none; }
 
 html {
+  color: #131313;
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
   font-size: 16px; }
 
@@ -285,11 +286,19 @@ body {
       top: 1rem;
       height: 3px; } }
 
-.lamp-sum {
-  border: 1px solid red; }
+.content h3 {
+  font-family: "Rex", Arial, Helvetica, sans-serif;
+  font-size: 1.5rem; }
 
-.lamp-sum__icon svg {
-  fill: #a8acb9; }
+.content p {
+  margin: 0;
+  margin-bottom: 1em;
+  line-height: 1.75; }
+
+.content p em {
+  color: #d6a354;
+  font-style: normal;
+  font-weight: 700; }
 
 .timeline {
   position: relative;
@@ -329,3 +338,9 @@ body {
 .timeline__desc strong {
   font-weight: 700;
   text-transform: uppercase; }
+
+.lamp-sum {
+  border: 1px solid red; }
+
+.lamp-sum__icon svg {
+  fill: #a8acb9; }
