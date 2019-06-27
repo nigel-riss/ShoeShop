@@ -1,11 +1,43 @@
 .sales-contact {
+    // box model
+    display: inline-block;
+    vertical-align: top;
 
+    // typography
+    font-family: $titleFont;
+    font-size: 1rem;
 }
 
 .sales-contact__title {
+    // box model
+    margin: 0;
 
+    // typography
+}
+
+.sales-contact__phone {
+    // typography
+    color: $golden;
+    font-size: 5rem;
+    text-decoration: none;
+
+    // visual
+    transition: opacity 0.15s ease-out;
+}
+
+.sales-contact__phone:hover {
+    // visual
+    opacity: 0.5;
 }
 
 .sales-contact__name {
-    
+    // box model
+    margin: 0;
+
+    // typography
+    text-align: right;
+}
+
+.sales-contact__name::before {
+    content: "— "
 }

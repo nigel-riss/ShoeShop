@@ -1,0 +1,30 @@
+.indicator {
+    border: 1px solid red;
+    // positioning
+    position: relative;
+
+    // typography
+    
+}
+
+.indicator__value {
+
+}
+
+.indicator__desc {
+
+}
+
+.indicator__icon {
+    // positioning
+    position: absolute;
+}
+
+.indicator__icon svg {
+    // visual
+    fill: $greyIcon;
+}
+
+.indicator__note {
+    
+}

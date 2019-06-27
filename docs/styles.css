@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%; }
@@ -339,8 +340,37 @@ body {
   font-weight: 700;
   text-transform: uppercase; }
 
-.lamp-sum {
-  border: 1px solid red; }
+.sales-contact {
+  display: inline-block;
+  vertical-align: top;
+  font-family: "Rex", Arial, Helvetica, sans-serif;
+  font-size: 1rem; }
 
-.lamp-sum__icon svg {
+.sales-contact__title {
+  margin: 0; }
+
+.sales-contact__phone {
+  color: #d6a354;
+  font-size: 5rem;
+  text-decoration: none;
+  transition: opacity 0.15s ease-out; }
+
+.sales-contact__phone:hover {
+  opacity: 0.5; }
+
+.sales-contact__name {
+  margin: 0;
+  text-align: right; }
+
+.sales-contact__name::before {
+  content: "— "; }
+
+.indicator {
+  border: 1px solid red;
+  position: relative; }
+
+.indicator__icon {
+  position: absolute; }
+
+.indicator__icon svg {
   fill: #a8acb9; }
