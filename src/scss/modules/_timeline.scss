@@ -3,7 +3,14 @@
     position: relative;
 
     // box model
-    padding: 40px;
+    padding: 20px;
+    padding-top: 60px;
+
+    @include atTablet {
+        // box model
+        padding: 40px;
+        padding-top: 80px;
+    }
 }
 
 .timeline::before {
@@ -17,21 +24,34 @@
     // box model
     display: block;
     height: 100%;
-    width: 3px;
+    width: 2px;
 
     // visual
     // background-color: $golden;
     background-image: linear-gradient(rgba(#f2e2c9, 0), rgba(#f2e2c9, 1), rgba(#f2e2c9, 1), rgba(#f2e2c9, 1), rgba(#f2e2c9, 0));
+
+    @include atTablet {
+        // box model
+        width: 3px;
+    }
 }
 
 .timeline__date {
     // positioning
     position: relative;
 
+    // box model
+    margin-bottom: 0.25em;
+
     // typography
     color: $golden;
     font-family: $titleFont;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
+
+    @include atTablet {
+        // typography
+        font-size: 3.5rem;
+    }
 }
 
 .timeline__date::before {
@@ -39,25 +59,37 @@
 
     // positioning
     position: absolute;
-    left: -43px;
-    top: 1.75rem;
+    left: -22px;
+    top: 0.5em;
 
     // box model
     display: block;
-    height: 9px;
-    width: 9px;
+    height: 6px;
+    width: 6px;
 
     // visual
     background-color: $golden;
 
     // border
     border-radius: 50%;
+
+    @include atTablet {
+        // positioning
+        left: -43px;
+
+        // box model
+        height: 9px;
+        width: 9px;
+    }
 }
 
 .timeline__desc {
     // box model
     margin: 0;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+
+    // typography
+    line-height: 1.5;
 }
 
 .timeline__desc strong {
