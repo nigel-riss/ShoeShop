@@ -28,13 +28,13 @@
     
         .feature__icon {
             // border
-            border-bottom: 2px solid $golden;
+            border-bottom: 2px solid transparent;
         }
     
         .feature__icon svg {
             // positioning
             bottom: 0;
-    
+
             // visual
             fill: $golden;
         }
@@ -61,6 +61,9 @@
     height: 60px;
     width: 60px;
 
+    // visual
+    transition: all 0.15s ease-out;
+
     @include atTablet {
         position: relative;
 
@@ -77,10 +80,7 @@
     }
 }
 
-.feature__icon svg {
-
-    
-    
+.feature__icon svg { 
     // visual
     fill: $greyIcon;
     transition: all 0.25s ease-out;

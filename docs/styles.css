@@ -146,7 +146,7 @@ template {
   display: none; }
 
 html {
-  color: #131313;
+  color: #4f5362;
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
   font-size: 14px; }
   @media (min-width: 700px) {
@@ -228,13 +228,13 @@ body {
   font-size: 2.5rem;
   line-height: 1.25;
   background-color: #d6a354;
-  box-shadow: -15px 10px 40px -10px rgba(19, 19, 19, 0.5);
+  box-shadow: -15px 10px 40px -10px rgba(79, 83, 98, 0.5);
   text-shadow: -3px 2px 0 #896322; }
   @media (min-width: 700px) {
     .section-header__title {
       padding: 20px 40px;
       font-size: 3rem;
-      box-shadow: -5px 10px 15px 0 rgba(19, 19, 19, 0.25);
+      box-shadow: -5px 10px 15px 0 rgba(79, 83, 98, 0.25);
       text-shadow: -4px 3px 0 #896322; } }
   @media (min-width: 1500px) {
     .section-header__title {
@@ -432,10 +432,11 @@ body {
       font-size: 4rem; } }
 
 .indicator__value small {
+  display: inline-block;
+  margin-left: -0.25em;
   font-size: 0.75em; }
   @media (min-width: 700px) {
     .indicator__value small {
-      display: inline-block;
       margin-left: -0.5em;
       font-size: 0.5em; } }
 
@@ -510,7 +511,7 @@ body {
   .feature:hover {
     background-color: #333333; }
     .feature:hover .feature__icon {
-      border-bottom: 2px solid #d6a354; }
+      border-bottom: 2px solid transparent; }
     .feature:hover .feature__icon svg {
       bottom: 0;
       fill: #d6a354; }
@@ -524,7 +525,8 @@ body {
   left: 0;
   top: 0;
   height: 60px;
-  width: 60px; }
+  width: 60px;
+  transition: all 0.15s ease-out; }
   @media (min-width: 700px) {
     .feature__icon {
       position: relative;

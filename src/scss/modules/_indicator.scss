@@ -57,12 +57,15 @@
 }
 
 .indicator__value small {
+    // box model
+    display: inline-block;
+    margin-left: -0.25em;
+
     // typography
     font-size: 0.75em;
 
     @include atTablet {
         // box model
-        display: inline-block;
         margin-left: -0.5em;
 
         // typography
