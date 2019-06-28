@@ -435,6 +435,8 @@ body {
   font-size: 0.75em; }
   @media (min-width: 700px) {
     .indicator__value small {
+      display: inline-block;
+      margin-left: -0.5em;
       font-size: 0.5em; } }
 
 .indicator__desc {
