@@ -522,7 +522,7 @@ body {
 
 .feature__icon {
   position: absolute;
-  left: 0;
+  left: 3px;
   top: 0;
   height: 60px;
   width: 60px;
@@ -550,16 +550,22 @@ body {
 
 .feature__title {
   margin: 0;
+  margin-bottom: 0.25em;
   color: #d6a354;
   font-family: "Rex", Arial, Helvetica, sans-serif;
-  font-size: 1rem;
+  font-size: 1.25rem;
+  line-height: 1.25;
   transition: all 0.25s ease-out; }
   @media (min-width: 700px) {
     .feature__title {
       font-size: 3rem; } }
 
+.feature__title strong {
+  font-size: 1.5em; }
+
 .feature__desc {
   margin: 0;
+  line-height: 1.5;
   transition: all 0.25s ease-out; }
 
 .support-item {

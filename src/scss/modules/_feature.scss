@@ -54,7 +54,7 @@
 .feature__icon {
     // positioning
     position: absolute;
-    left: 0;
+    left: 3px;
     top: 0;
 
     // box model
@@ -80,7 +80,7 @@
     }
 }
 
-.feature__icon svg { 
+.feature__icon svg {
     // visual
     fill: $greyIcon;
     transition: all 0.25s ease-out;
@@ -101,11 +101,13 @@
 .feature__title {
     // box model
     margin: 0;
+    margin-bottom: 0.25em;
 
     // typography
     color: $golden;
     font-family: $titleFont;
-    font-size: 1rem;
+    font-size: 1.25rem;
+    line-height: 1.25;
 
     // visual
     transition: all 0.25s ease-out;
@@ -116,9 +118,17 @@
     }
 }
 
+.feature__title strong {
+    // typography
+    font-size: 1.5em;
+}
+
 .feature__desc {
     // box model
     margin: 0;
+
+    // typography
+    line-height: 1.5;
 
     // visual
     transition: all 0.25s ease-out;
