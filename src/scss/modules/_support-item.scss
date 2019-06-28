@@ -1,0 +1,23 @@
+.support-item {
+    // box model
+    margin: 0 auto;
+    margin-bottom: 40px;
+    max-width: 320px;
+
+    // typography
+    text-align: center;
+}
+
+h3.support-item__title {
+    // box model
+    margin-bottom: 0.125em;
+
+    // typography
+    color: $golden;
+    font-size: 2rem;
+}
+
+.support-item__subtitle {
+    // typography
+    line-height: 1.5;
+}

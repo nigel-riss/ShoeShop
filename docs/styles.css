@@ -561,3 +561,17 @@ body {
 .feature__desc {
   margin: 0;
   transition: all 0.25s ease-out; }
+
+.support-item {
+  margin: 0 auto;
+  margin-bottom: 40px;
+  max-width: 320px;
+  text-align: center; }
+
+h3.support-item__title {
+  margin-bottom: 0.125em;
+  color: #d6a354;
+  font-size: 2rem; }
+
+.support-item__subtitle {
+  line-height: 1.5; }
