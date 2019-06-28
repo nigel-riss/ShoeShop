@@ -5,6 +5,7 @@
 
 .section__header {
     // box model
+    margin-bottom: 60px;
 
 
     @include atTablet {

@@ -4,31 +4,80 @@
 
     // box model
     margin-bottom: 40px;
-    min-height: 120px;
-    padding-left: 160px;
+    min-height: 70px;
+    padding-left: 80px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    // border: 2px dashed fuchsia;
 
     // typography
     text-transform: uppercase;
+
+    @include atTablet {
+        // box model
+        padding-left: 160px;
+        min-height: 120px;
+    }
+}
+
+.indicator--card {
+    // box model
+    margin: 0;
+    padding: 20px;
+
+    // typography
+    text-align: center;
+
+    & .indicator__icon {
+        // positioning
+        position: relative;
+
+        // box model
+        margin: 0 auto;
+    }
+
+    & .indicator__desc {
+        // box model
+        margin-bottom: 1rem;
+    }
 }
 
 .indicator__value {
     // typography
     color: $golden;
-    font-size: 4rem;
+    letter-spacing: 0.025em;
+    font-size: 2rem;
     font-weight: 900;
+
+    @include atTablet {
+        // typography
+        font-size: 4rem;
+    }
 }
 
 .indicator__value small {
     // typography
-    font-size: 0.5em;
+    font-size: 0.75em;
+
+    @include atTablet {
+        // typography
+        font-size: 0.5em;
+    }
 }
 
 .indicator__desc {
     // typography
     line-height: 1.5;
+    letter-spacing: 0.025em;
+    font-size: 0.8em;
+    font-weight: 700;
+
+    @include atTablet {
+        // typography
+        font-size: 1em;
+        font-weight: 400;
+    }
 }
 
 .indicator__desc em {
@@ -44,9 +93,14 @@
     left: 0;
 
     // box model
-    height: 110px;
-    width: 110px;
+    height: 60px;
+    width: 60px;
 
+    @include atTablet {
+        // box model
+        height: 110px;
+        width: 110px;
+    }
     // border: 2px dashed fuchsia;
 }
 
@@ -56,5 +110,10 @@
 }
 
 .indicator__note {
-    
+    // typography
+    color: $greyIcon;
+    letter-spacing: 0.025em;
+    line-height: 1.5;
+    font-size: 0.8em;
+    font-weight: 700;
 }

@@ -194,9 +194,11 @@ body {
 .section {
   margin-bottom: 60px; }
 
-@media (min-width: 700px) {
-  .section__header {
-    margin-bottom: 160px; } }
+.section__header {
+  margin-bottom: 60px; }
+  @media (min-width: 700px) {
+    .section__header {
+      margin-bottom: 160px; } }
 
 .section__content {
   margin: 0 auto;
@@ -308,12 +310,10 @@ body {
 
 .timeline {
   position: relative;
-  padding: 20px;
-  padding-top: 60px; }
+  padding: 20px; }
   @media (min-width: 700px) {
     .timeline {
-      padding: 40px;
-      padding-top: 80px; } }
+      padding: 40px; } }
 
 .timeline::before {
   content: "";
@@ -366,15 +366,20 @@ body {
 .sales-contact {
   display: inline-block;
   vertical-align: top;
+  width: 100%;
   font-family: "Rex", Arial, Helvetica, sans-serif;
-  font-size: 1rem; }
+  font-size: 2.4vw; }
 
 .sales-contact__title {
-  margin: 0; }
+  margin: 0;
+  font-size: 2em; }
+  @media (min-width: 700px) {
+    .sales-contact__title {
+      font-size: 1em; } }
 
 .sales-contact__phone {
   color: #d6a354;
-  font-size: 5rem;
+  font-size: 5em;
   text-decoration: none;
   transition: opacity 0.15s ease-out; }
 
@@ -383,7 +388,11 @@ body {
 
 .sales-contact__name {
   margin: 0;
+  font-size: 2em;
   text-align: right; }
+  @media (min-width: 700px) {
+    .sales-contact__name {
+      font-size: 1em; } }
 
 .sales-contact__name::before {
   content: "— "; }
@@ -391,23 +400,51 @@ body {
 .indicator {
   position: relative;
   margin-bottom: 40px;
-  min-height: 120px;
-  padding-left: 160px;
+  min-height: 70px;
+  padding-left: 80px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   text-transform: uppercase; }
+  @media (min-width: 700px) {
+    .indicator {
+      padding-left: 160px;
+      min-height: 120px; } }
+
+.indicator--card {
+  margin: 0;
+  padding: 20px;
+  text-align: center; }
+  .indicator--card .indicator__icon {
+    position: relative;
+    margin: 0 auto; }
+  .indicator--card .indicator__desc {
+    margin-bottom: 1rem; }
 
 .indicator__value {
   color: #d6a354;
-  font-size: 4rem;
+  letter-spacing: 0.025em;
+  font-size: 2rem;
   font-weight: 900; }
+  @media (min-width: 700px) {
+    .indicator__value {
+      font-size: 4rem; } }
 
 .indicator__value small {
-  font-size: 0.5em; }
+  font-size: 0.75em; }
+  @media (min-width: 700px) {
+    .indicator__value small {
+      font-size: 0.5em; } }
 
 .indicator__desc {
-  line-height: 1.5; }
+  line-height: 1.5;
+  letter-spacing: 0.025em;
+  font-size: 0.8em;
+  font-weight: 700; }
+  @media (min-width: 700px) {
+    .indicator__desc {
+      font-size: 1em;
+      font-weight: 400; } }
 
 .indicator__desc em {
   color: #d6a354;
@@ -417,11 +454,43 @@ body {
   position: absolute;
   bottom: 0;
   left: 0;
-  height: 110px;
-  width: 110px; }
+  height: 60px;
+  width: 60px; }
+  @media (min-width: 700px) {
+    .indicator__icon {
+      height: 110px;
+      width: 110px; } }
 
 .indicator__icon svg {
   fill: #a8acb9; }
+
+.indicator__note {
+  color: #a8acb9;
+  letter-spacing: 0.025em;
+  line-height: 1.5;
+  font-size: 0.8em;
+  font-weight: 700; }
+
+.card {
+  margin-bottom: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: 1px solid rgba(168, 172, 185, 0.25);
+  border-radius: 10px; }
+
+.card__title {
+  display: inline-block;
+  padding: 10px;
+  width: 140px;
+  color: #ffffff;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.15rem;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #d6a354;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px; }
 
 .feature {
   border: 2px dashed fuchsia;
