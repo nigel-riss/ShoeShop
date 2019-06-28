@@ -1,77 +1,101 @@
 .feature {
-    border: 2px dashed fuchsia;
+    // positioning
+    position: relative;
 
     // box model
-    min-height: 300px;
-    margin-bottom: 60px;
-    padding: 30px;
+    margin-bottom: 40px;
+    padding-left: 80px;
 
     // visual
     transition: all 0.25s ease-out;
 
     // border
-    border-radius: 10px;
+    // border: 1px solid rgba($greyIcon, 0.25);
+    // border-radius: 10px;
+
+    @include atTablet {
+        // box model
+        min-height: 300px;
+        margin-bottom: 60px;
+        padding: 30px;
+    }
 }
 
 .feature:hover {
-    // visual
-    background-color: #333333;
-
-    .feature__icon {
-        // border
-        border-bottom: 2px solid $golden;
-    }
-
-    .feature__icon svg {
-        // positioning
-        bottom: 0;
-
+    @include atTablet {
         // visual
-        fill: $golden;
-    }
-
-    .feature__title {
-        // typography
-        color: $white;
-    }
-
-    .feature__desc {
-        // typography
-        color: $golden;
+        background-color: #333333;
+    
+        .feature__icon {
+            // border
+            border-bottom: 2px solid $golden;
+        }
+    
+        .feature__icon svg {
+            // positioning
+            bottom: 0;
+    
+            // visual
+            fill: $golden;
+        }
+    
+        .feature__title {
+            // typography
+            color: $white;
+        }
+    
+        .feature__desc {
+            // typography
+            color: $golden;
+        }
     }
 }
 
 .feature__icon {
     // positioning
-    position: relative;
+    position: absolute;
+    left: 0;
+    top: 0;
 
     // box model
-    height: 130px;
-    width: 160px;
-    margin-bottom: 30px;
-    // padding-right: 60px;
+    height: 60px;
+    width: 60px;
 
-    // visual
-    overflow: hidden;
+    @include atTablet {
+        position: relative;
 
-    // border
-    border-bottom: 2px solid $greyIcon;
+        // box model
+        height: 130px;
+        width: 160px;
+        margin-bottom: 30px;
+
+        // visual
+        overflow: hidden;
+
+        // border
+        border-bottom: 2px solid $greyIcon;
+    }
 }
 
 .feature__icon svg {
-    // positioning
-    position: absolute;
-    left: 10px;
-    bottom: -15px;
-    transform: rotate(-15deg);
 
-    // box model
-    height: 120px;
-    width: 120px;
-
+    
+    
     // visual
     fill: $greyIcon;
     transition: all 0.25s ease-out;
+
+    @include atTablet {
+        // positioning
+        position: absolute;
+        left: 10px;
+        bottom: -15px;
+        transform: rotate(-15deg);
+
+        // box model
+        height: 120px;
+        width: 120px;
+    }
 }
 
 .feature__title {
@@ -81,10 +105,15 @@
     // typography
     color: $golden;
     font-family: $titleFont;
-    font-size: 3rem;
+    font-size: 1rem;
 
     // visual
     transition: all 0.25s ease-out;
+
+    @include atTablet {
+        // typography
+        font-size: 3rem;
+    }
 }
 
 .feature__desc {

@@ -207,6 +207,7 @@ body {
 
 .section-header {
   transform: skewY(-15deg);
+  width: 95%;
   max-width: 325px; }
   @media (min-width: 700px) {
     .section-header {
@@ -368,7 +369,7 @@ body {
   vertical-align: top;
   width: 100%;
   font-family: "Rex", Arial, Helvetica, sans-serif;
-  font-size: 2.4vw; }
+  font-size: 2.39vw; }
 
 .sales-contact__title {
   margin: 0;
@@ -493,49 +494,65 @@ body {
   border-bottom-right-radius: 20px; }
 
 .feature {
-  border: 2px dashed fuchsia;
-  min-height: 300px;
-  margin-bottom: 60px;
-  padding: 30px;
-  transition: all 0.25s ease-out;
-  border-radius: 10px; }
+  position: relative;
+  margin-bottom: 40px;
+  padding-left: 80px;
+  transition: all 0.25s ease-out; }
+  @media (min-width: 700px) {
+    .feature {
+      min-height: 300px;
+      margin-bottom: 60px;
+      padding: 30px; } }
 
-.feature:hover {
-  background-color: #333333; }
-  .feature:hover .feature__icon {
-    border-bottom: 2px solid #d6a354; }
-  .feature:hover .feature__icon svg {
-    bottom: 0;
-    fill: #d6a354; }
-  .feature:hover .feature__title {
-    color: #ffffff; }
-  .feature:hover .feature__desc {
-    color: #d6a354; }
+@media (min-width: 700px) {
+  .feature:hover {
+    background-color: #333333; }
+    .feature:hover .feature__icon {
+      border-bottom: 2px solid #d6a354; }
+    .feature:hover .feature__icon svg {
+      bottom: 0;
+      fill: #d6a354; }
+    .feature:hover .feature__title {
+      color: #ffffff; }
+    .feature:hover .feature__desc {
+      color: #d6a354; } }
 
 .feature__icon {
-  position: relative;
-  height: 130px;
-  width: 160px;
-  margin-bottom: 30px;
-  overflow: hidden;
-  border-bottom: 2px solid #a8acb9; }
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 60px;
+  width: 60px; }
+  @media (min-width: 700px) {
+    .feature__icon {
+      position: relative;
+      height: 130px;
+      width: 160px;
+      margin-bottom: 30px;
+      overflow: hidden;
+      border-bottom: 2px solid #a8acb9; } }
 
 .feature__icon svg {
-  position: absolute;
-  left: 10px;
-  bottom: -15px;
-  transform: rotate(-15deg);
-  height: 120px;
-  width: 120px;
   fill: #a8acb9;
   transition: all 0.25s ease-out; }
+  @media (min-width: 700px) {
+    .feature__icon svg {
+      position: absolute;
+      left: 10px;
+      bottom: -15px;
+      transform: rotate(-15deg);
+      height: 120px;
+      width: 120px; } }
 
 .feature__title {
   margin: 0;
   color: #d6a354;
   font-family: "Rex", Arial, Helvetica, sans-serif;
-  font-size: 3rem;
+  font-size: 1rem;
   transition: all 0.25s ease-out; }
+  @media (min-width: 700px) {
+    .feature__title {
+      font-size: 3rem; } }
 
 .feature__desc {
   margin: 0;
