@@ -8,7 +8,23 @@ html(lang="en")
         link(rel="stylesheet", href="styles.css")
 
     body
-        header
+        header.header
+            .header__top
+                .header__logo: img(src="", alt="Логотип Oldboy Family")
+
+                .header__menu
+                    nav.main-nav
+                        ul.main-nav__list
+                            li.main-nav__item: a(href="#").main-nav__link Главная
+                            li.main-nav__item: a(href="#history").main-nav__link О нас
+                            li.main-nav__item: a(href="#pricing").main-nav__link Стоимость
+                            li.main-nav__item: a(href="#advantages").main-nav__link Преимущества
+                            li.main-nav__item: a(href="#statistics").main-nav__link Статистика
+
+                .header__city-select
+                    a(href="choose-city.html").city-select Топ города&nbsp;<span class="city-select__triangle">▼</span> <em>для открытия барбершопа</em>
+
+            .header__content
             //- Открой свою мужскую парикмахерскую
 
         main
@@ -65,7 +81,7 @@ html(lang="en")
                     Количество городов
                     130 +20
 
-            section.section#coast
+            section.section#pricing
                 .section__header
                     header.section-header
                         h2.section-header__title Стоимость франшизы
@@ -635,3 +651,5 @@ html(lang="en")
         //-         Остались вопросы, напишите нам: info@oldboyfamily.ru
 
         //-         &copy; 2019 oldboy barbershop
+
+        .cities-popup
