@@ -25,7 +25,23 @@ html(lang="en")
                     a(href="choose-city.html").city-select Топ города&nbsp;<span class="city-select__triangle">▼</span> <em>для открытия барбершопа</em>
 
             .header__content
-            //- Открой свою мужскую парикмахерскую
+                .header__caption
+                    .header-caption
+                        h1.header-caption__title <em>Открой</em> свою мужскую парикмахерскую
+                    
+                    .header__button
+                        a.button(href="#") Узнать подробнее
+
+                    .header__achievements
+                        .achievement
+                            .achievement__deco: img(src="", alt="")
+                            .achievement__deco: img(src="", alt="")
+                            p.achievement__text Oldboy barbershop <em>Франшиза для тех, кто хочет большего</em>
+
+                aside.header__aside
+                    header.section-header.section-header--aside
+                        p.section-header__text Начни зарабатывать
+                        h2.section-header__title 200&nbsp;000&nbsp;₽ в&nbsp;месяц
 
         main
             section.section#history
@@ -33,6 +49,9 @@ html(lang="en")
                     header.section-header
                         h2.section-header__title Немного <br>истории
                         p.section-header__subtitle Oldboy Barbershop
+
+                .section__shadow-text
+                    p.shadow-text <strong>Oldboy</strong> barbershop <br>Стрижём и бреем
 
                 .section__content
                     dl.timeline
@@ -86,6 +105,9 @@ html(lang="en")
                     header.section-header
                         h2.section-header__title Стоимость франшизы
                         p.section-header__subtitle В 2019 году
+
+                .section__shadow-text
+                    p.shadow-text.shadow-text--dark $$$
 
                 .section__content
                     .sales-contact
@@ -236,6 +258,9 @@ html(lang="en")
                         h2.section-header__title Партнёрская сеть&nbsp;Oldboy
                         p.section-header__subtitle Работа с&nbsp;партнёрами
 
+                .section__shadow-text
+                    p.shadow-text.shadow-text--dark <strong>Сеть Oldboy</strong> Barbershop
+
                 .section__content
                     .content
                         h3.no-competition «Нет» — Внутренней&nbsp;конкуренции
@@ -287,6 +312,9 @@ html(lang="en")
                     header.section-header
                         h2.section-header__title Команда Oldboy
                         p.section-header__subtitle Кадры решают всё!
+
+                .section__shadow-text
+                    p.shadow-text <strong>Наша команда</strong>
 
                 .section__content
                     .content
@@ -378,6 +406,9 @@ html(lang="en")
                         h2.section-header__title Персонал барбершопа
                         p.section-header__subtitle Ваши барберы
 
+                .section__shadow-text
+                    p.shadow-text Барберы Oldboy
+
                 .section__content
                     .content
                         h3 Униформа барберов
@@ -413,6 +444,9 @@ html(lang="en")
                         h2.section-header__title Yclients и&nbsp;CRM
                         p.section-header__subtitle Менеджмент
 
+                .section__shadow-text
+                    p.shadow-text <strong>CRM</strong>
+
                 .section__content
                     .content
                         h3 Управление франшизой
@@ -425,27 +459,27 @@ html(lang="en")
 
                         .content
                             .feature
-                                .feature__icon: img(src="./img/icons/design-tool.svg", alt="")
+                                .feature__icon: img(src="./img/icons/network.svg", alt="")
                                 h3.feature__title Клиентская база
                                 p.feature__desc Cо статистикой и&nbsp;историей посещений помогает не&nbsp;терять постоянных клиентов
                             
                             .feature
-                                .feature__icon: img(src="./img/icons/investment.svg", alt="")
+                                .feature__icon: img(src="./img/icons/timetable.svg", alt="")
                                 h3.feature__title Электронный журнал
                                 p.feature__desc Pаписей клиентов с&nbsp;функцией SMS&nbsp;и&nbsp;e&nbsp;-&nbsp;mail напоминания
 
                             .feature
-                                .feature__icon: img(src="./img/icons/barbershop.svg", alt="")
+                                .feature__icon: img(src="./img/icons/finance.svg", alt="")
                                 h3.feature__title Онлайн запись
                                 p.feature__desc Помогает не&nbsp;упускать новых клиентов и&nbsp;обелегчает работу администратора
 
                             .feature
-                                .feature__icon: img(src="./img/icons/premium.svg", alt="")
+                                .feature__icon: img(src="./img/icons/smartphone.svg", alt="")
                                 h3.feature__title Мобильное приложение
                                 p.feature__desc Использует для записи более 45% клиентов
 
                             .feature
-                                .feature__icon: img(src="./img/icons/laurel.svg", alt="")
+                                .feature__icon: img(src="./img/icons/analytics.svg", alt="")
                                 h3.feature__title Полная Статистика
                                 p.feature__desc Позволяет следить за&nbsp;ключевыми показателями бизнеса
 
@@ -455,12 +489,12 @@ html(lang="en")
                                 p.feature__desc #1 пос качиванию и&nbsp;использованию среди мобильных приложений барбершопов в&nbsp;России по&nbsp;версии РБК
 
                             .feature
-                                .feature__icon: img(src="./img/icons/tattoo.svg", alt="")
+                                .feature__icon: img(src="./img/icons/upload.svg", alt="")
                                 h3.feature__title Расширение клиентской базы
                                 p.feature__desc Через приложение (Android, IOS) клиенты будут записываться в&nbsp;ближайший филиал —&nbsp;это&nbsp;будет именно ВАШ филиал. Таким образом мы обеспечиваем вас клиентами уже в&nbsp;первый месяц после открытия
 
                             .feature
-                                .feature__icon: img(src="./img/icons/resume.svg", alt="")
+                                .feature__icon: img(src="./img/icons/barber.svg", alt="")
                                 h3.feature__title Выбор мастера онлайн, даты и&nbsp;времени
                                 p.feature__desc Удобный интерфейс позволит парой кликов записаться в&nbsp;барбершоп даже самым убеждённым интровертам
 
@@ -479,6 +513,10 @@ html(lang="en")
                     header.section-header
                         h2.section-header__title Франшиза Oldboy
                         p.section-header__subtitle Живая система
+
+                .section__shadow-text
+                    p.shadow-text.shadow-text--dark <strong>Франшиза Oldboy</strong> Barbershop
+                    p.shadow-text.shadow-text--beige Family
 
                 .section__content
                     .content
@@ -577,6 +615,9 @@ html(lang="en")
                     header.section-header
                         h2.section-header__title Что необходимо
                         p.section-header__subtitle Для&nbsp;открытия
+
+                .section__shadow-text
+                    p.shadow-text.shadow-text--dark Условия
 
                 .section__content
                     .sales-contact
