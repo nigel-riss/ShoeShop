@@ -1,4 +1,4 @@
 1. Дооптимизировать svg
-✔️ ⚠️mobile app icon missing Обновить иконки фич 
+✔️ ⚠️mobile app icon missing. Обновить иконки фич 
 ✔️ Добавить в разметку фоновый текст (.section__shadow-text)
-4. Разметка hero
+✔️️️️ Разметка hero

@@ -25,7 +25,23 @@ html(lang="en")
                     a(href="choose-city.html").city-select Топ города&nbsp;<span class="city-select__triangle">▼</span> <em>для открытия барбершопа</em>
 
             .header__content
-            //- Открой свою мужскую парикмахерскую
+                .header__caption
+                    .header-caption
+                        h1.header-caption__title <em>Открой</em> свою мужскую парикмахерскую
+                    
+                    .header__button
+                        a.button(href="#") Узнать подробнее
+
+                    .header__achievements
+                        .achievement
+                            .achievement__deco: img(src="", alt="")
+                            .achievement__deco: img(src="", alt="")
+                            p.achievement__text Oldboy barbershop <em>Франшиза для тех, кто хочет большего</em>
+
+                aside.header__aside
+                    header.section-header.section-header--aside
+                        p.section-header__text Начни зарабатывать
+                        h2.section-header__title 200&nbsp;000&nbsp;₽ в&nbsp;месяц
 
         main
             section.section#history
