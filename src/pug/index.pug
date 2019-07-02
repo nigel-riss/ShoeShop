@@ -32,16 +32,16 @@ html(lang="en")
                     .header__button
                         a.button(href="#") Узнать подробнее
 
-                    .header__achievements
-                        .achievement
-                            .achievement__deco: img(src="", alt="")
-                            .achievement__deco: img(src="", alt="")
-                            p.achievement__text Oldboy barbershop <em>Франшиза для тех, кто хочет большего</em>
-
                 aside.header__aside
                     header.section-header.section-header--aside
                         p.section-header__text Начни зарабатывать
                         h2.section-header__title 200&nbsp;000&nbsp;₽ в&nbsp;месяц
+
+                .header__achievements
+                    .achievements
+                        .achievements__item: img(src="", alt="")
+                        .achievements__item: img(src="", alt="")
+                        p.achievements__text Oldboy barbershop <em>Франшиза для тех, кто хочет большего</em>
 
         main
             section.section#history
@@ -50,10 +50,10 @@ html(lang="en")
                         h2.section-header__title Немного <br>истории
                         p.section-header__subtitle Oldboy Barbershop
 
-                .section__shadow-text
-                    p.shadow-text <strong>Oldboy</strong> barbershop <br>Стрижём и бреем
 
                 .section__content
+                    p.section__shadow-text <strong>Oldboy</strong> barbershop <br>Стрижём и бреем
+
                     dl.timeline
                         dt.timeline__date EST. 2014
                         dd.timeline__desc <strong>Открытие первого филиала в&nbsp;Калининграде</strong>
