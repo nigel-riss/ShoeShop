@@ -1,3 +1,41 @@
 .city-select {
+    // positioning
+    position: relative;
 
+    // typography
+    color: $dark;
+    font-family: $titleFont;
+    text-decoration: none;
+}
+
+.city-select::before {
+    content: "";
+
+    // positioning
+    position: absolute;
+    transform: translateX(-110%);
+
+    // box model
+    height: 100%;
+    width: 28px;
+
+    // visual
+    background-image: url('./img/deco/place.svg');
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+.city-select em {
+    // typography
+    color: $golden;
+    font-style: normal;
+}
+
+.city-select__triangle {
+    // box model
+    display: inline-block;
+    vertical-align: top;
+
+    // visual
+    transform: scaleY(0.75) translateY(-0.1em);
 }

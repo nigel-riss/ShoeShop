@@ -196,11 +196,12 @@ body {
 
 .header__top {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  margin-bottom: 5px;
+  padding-right: 50px; }
 
 .header__logo {
-  width: 100px;
-  border: 2px dashed fuchsia; }
+  width: 95px; }
 
 .header__logo svg {
   max-height: 100%;
@@ -210,12 +211,16 @@ body {
   display: none; }
 
 .header__content {
-  position: relative; }
+  position: relative;
+  padding-top: 60px; }
 
 .header__shadow-text {
   position: absolute;
-  z-index: -1;
   left: -10vw;
+  top: 0;
+  z-index: -1;
+  margin: 0;
+  padding: 0;
   color: #f7f7f7;
   font-size: 15vw;
   font-weight: 900;
@@ -225,7 +230,12 @@ body {
 .header__shadow-text strong {
   font-size: 1.5em; }
 
+.header__button {
+  margin-top: 30px; }
+
 .header-caption {
+  margin: 0;
+  padding: 0;
   font-family: "Rex", Arial, Helvetica, sans-serif;
   font-size: 8vw;
   line-height: 1.2em; }
@@ -240,6 +250,45 @@ body {
   font-size: 1.1em;
   font-style: normal;
   letter-spacing: 0.008em; }
+
+.city-select {
+  position: relative;
+  color: #4f5362;
+  font-family: "Rex", Arial, Helvetica, sans-serif;
+  text-decoration: none; }
+
+.city-select::before {
+  content: "";
+  position: absolute;
+  transform: translateX(-110%);
+  height: 100%;
+  width: 28px;
+  background-image: url("./img/deco/place.svg");
+  background-repeat: no-repeat;
+  background-position: top right; }
+
+.city-select em {
+  color: #d6a354;
+  font-style: normal; }
+
+.city-select__triangle {
+  display: inline-block;
+  vertical-align: top;
+  transform: scaleY(0.75) translateY(-0.1em); }
+
+.button {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 2rem;
+  color: #4f5362;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+  line-height: 3rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 2px solid #d6a354;
+  border-radius: 1.5rem;
+  border-radius: calc(1.5rem + 4px); }
 
 .section {
   margin-bottom: 60px; }

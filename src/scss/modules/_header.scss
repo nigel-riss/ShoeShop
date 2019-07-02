@@ -7,12 +7,13 @@
     // box model
     display: flex;
     justify-content: space-between;
+    margin-bottom: 5px;
+    padding-right: 50px;
 }
 
 .header__logo {
     // box model
-    width: 100px;
-    border: 2px dashed fuchsia;
+    width: 95px;
 }
 
 .header__logo svg {
@@ -33,13 +34,21 @@
 .header__content {
     // positioning
     position: relative;
+
+    // box model
+    padding-top: 60px;
 }
 
 .header__shadow-text {
     // positioning
     position: absolute;
-    z-index: -1;
     left: -10vw;
+    top: 0;
+    z-index: -1;
+
+    // box model
+    margin: 0;
+    padding: 0;
 
     // typography
     color: $shadowWhite;
@@ -59,7 +68,8 @@
 }
 
 .header__button {
-
+    // box model
+    margin-top: 30px;
 }
 
 .header__aside {

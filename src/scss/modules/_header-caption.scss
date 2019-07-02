@@ -1,4 +1,8 @@
 .header-caption {
+    // box model
+    margin: 0;
+    padding: 0;
+
     // typography
     font-family: $titleFont;
     font-size: 8vw;
