@@ -1,0 +1,23 @@
+.header-caption {
+    // typography
+    font-family: $titleFont;
+    font-size: 8vw;
+    line-height: 1.2em;
+}
+
+.header-caption strong {
+    // box model
+    display: inline-block;
+    margin-left: -0.04em;
+
+    // typography
+    color: $golden;
+    font-size: 2.51em;
+}
+
+.header-caption em {
+    // typography
+    font-size: 1.1em;
+    font-style: normal;
+    letter-spacing: 0.008em;
+}

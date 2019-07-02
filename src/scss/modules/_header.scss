@@ -1,0 +1,72 @@
+.header {
+    // box model
+    padding: 20px;
+}
+
+.header__top {
+    // box model
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__logo {
+    // box model
+    width: 100px;
+    border: 2px dashed fuchsia;
+}
+
+.header__logo svg {
+    // box model
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.header__menu {
+    // box model
+    display: none;
+}
+
+.header__city-select {
+
+}
+
+.header__content {
+    // positioning
+    position: relative;
+}
+
+.header__shadow-text {
+    // positioning
+    position: absolute;
+    z-index: -1;
+    left: -10vw;
+
+    // typography
+    color: $shadowWhite;
+    font-size: 15vw;
+    font-weight: 900;
+    line-height: 0.9;
+    text-transform: uppercase;
+}
+
+.header__shadow-text strong {
+    // typography
+    font-size: 1.5em;
+}
+
+.header__caption {
+
+}
+
+.header__button {
+
+}
+
+.header__aside {
+
+}
+
+.header__achievements {
+
+}
+
