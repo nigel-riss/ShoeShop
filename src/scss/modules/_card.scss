@@ -13,13 +13,13 @@
     // box model
     display: inline-block;
     padding: 10px;
-    width: 140px;
+    // width: 140px;
 
     // typography
     color: $white;
     font-size: 0.85rem;
     font-weight: 600;
-    letter-spacing: 0.15rem;
+    letter-spacing: 0.05rem;
     text-align: center;
     text-transform: uppercase;
 
@@ -30,5 +30,6 @@
 }
 
 .card__content {
-    
+    // box model
+    padding: 10px;
 }

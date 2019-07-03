@@ -755,16 +755,18 @@ body {
 .card__title {
   display: inline-block;
   padding: 10px;
-  width: 140px;
   color: #ffffff;
   font-size: 0.85rem;
   font-weight: 600;
-  letter-spacing: 0.15rem;
+  letter-spacing: 0.05rem;
   text-align: center;
   text-transform: uppercase;
   background-color: #d6a354;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px; }
+
+.card__content {
+  padding: 10px; }
 
 .feature {
   position: relative;
@@ -864,3 +866,40 @@ h3.no-competition {
 .no-competition strong {
   display: block;
   font-size: 1.5em; }
+
+.branch {
+  text-align: center; }
+
+.branch__stats {
+  margin-bottom: 30px; }
+
+.branch__address {
+  font-size: 0.8rem; }
+
+.branch__stat {
+  margin: 0;
+  letter-spacing: 0.025em;
+  line-height: 1.5;
+  text-transform: uppercase; }
+
+.branch__stat em {
+  color: #d6a354;
+  font-style: normal; }
+
+.branch__desc {
+  margin: 0;
+  color: #d6a354;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 0.025em;
+  text-transform: uppercase; }
+
+.branch__value {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  line-height: 2; }
+
+.branch__note {
+  margin: 0;
+  font-size: 0.8rem; }
