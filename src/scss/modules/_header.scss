@@ -1,6 +1,7 @@
 .header {
     // box model
     padding: 20px;
+    margin-bottom: 20px;
 }
 
 .header__top {
@@ -23,8 +24,25 @@
 }
 
 .header__menu {
+    // positioning
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 777;
+
     // box model
-    display: none;
+    width: 100%;
+    max-width: 400px;
+
+    // visual
+    opacity: 0.9;
+    transition: all 0.3s ease-out;
+
+    &--hidden {
+        // positioning
+        right: -110%;
+    }
 }
 
 .header__city-select {
@@ -69,7 +87,11 @@
 
 .header__button {
     // box model
-    margin-top: 30px;
+    margin-bottom: 40px;
+    margin-top: 300px;
+
+    // typography
+    text-align: center;
 }
 
 .header__aside {
@@ -79,4 +101,3 @@
 .header__achievements {
 
 }
-
