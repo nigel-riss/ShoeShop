@@ -241,7 +241,8 @@ body {
   font-size: 1.5em; }
 
 .header__button {
-  margin-top: 30px; }
+  margin-top: 300px;
+  text-align: center; }
 
 .header-caption {
   margin: 0;
@@ -346,6 +347,88 @@ body {
   transform-origin: left center;
   transform: rotate(-45deg);
   width: 23px; }
+
+.button {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 2rem;
+  color: #4f5362;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+  line-height: 3rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 2px solid #d6a354;
+  border-radius: 1.5rem;
+  border-radius: calc(1.5rem + 4px); }
+
+.call {
+  position: absolute;
+  right: -25px;
+  top: 250px;
+  transform: skewY(-15deg);
+  width: 95%;
+  max-width: 325px; }
+  @media (min-width: 700px) {
+    .call {
+      max-width: inherit;
+      width: 350px; } }
+  @media (min-width: 1500px) {
+    .call {
+      width: 500px; } }
+
+.call__text {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  margin: 0;
+  color: #4f5362;
+  font-family: "Rex", Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 900;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  z-index: 5; }
+
+.call__title {
+  position: relative;
+  z-index: 2;
+  margin: 0;
+  margin-bottom: 0.25em;
+  padding: 20px;
+  padding-top: 40px;
+  color: #ffffff;
+  font-family: "Rex", Arial, Helvetica, sans-serif;
+  font-size: 2.5rem;
+  line-height: 1.25;
+  background-color: #d6a354;
+  box-shadow: -15px 10px 40px -10px rgba(79, 83, 98, 0.5);
+  text-shadow: -3px 2px 0 #896322; }
+  @media (min-width: 700px) {
+    .call__title {
+      padding: 20px 40px;
+      font-size: 3rem;
+      box-shadow: -5px 10px 15px 0 rgba(79, 83, 98, 0.25);
+      text-shadow: -4px 3px 0 #896322; } }
+  @media (min-width: 1500px) {
+    .call__title {
+      padding: 25px 50px;
+      padding-left: 120px;
+      font-size: 3.5rem; } }
+
+.call__title::before {
+  content: '';
+  position: absolute;
+  left: -20px;
+  top: 0;
+  height: 100%;
+  width: 60px;
+  background-image: url("./img/deco/gold-v-grunge.svg");
+  background-size: 60px;
+  background-repeat: repeat-y;
+  background-position: center center;
+  transform: rotateY(180deg);
+  z-index: -1; }
 
 .button {
   display: inline-block;

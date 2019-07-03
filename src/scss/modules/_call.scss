@@ -1,0 +1,115 @@
+.call {
+    // positioning
+    position: absolute;
+    right: -25px;
+    top: 250px;
+    transform: skewY(-15deg);
+    // z-index: 8;
+
+    // box model
+    width: 95%;
+    // max-width: 325px;
+    max-width: 325px;
+
+    @include atTablet {
+        // box model
+        max-width: inherit;
+        width: 350px;
+    }
+
+    @include atDesktopL {
+        // box model
+        width: 500px;
+    }
+}
+
+.call__text {
+    // // box model
+    // padding: 20px;
+    // margin-bottom: -20px;
+    // positioning
+    position: absolute;
+    top: 20px;
+    left: 20px;
+
+    // box model
+    margin: 0;
+
+    // typography
+    color: $dark;
+    font-family: $titleFont;
+    font-size: 1.5rem;
+    font-weight: 900;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+
+    // visual
+    z-index: 5;
+    // background-color: $golden;
+}
+
+.call__title {
+    // positioning
+    position: relative;
+    z-index: 2;
+
+    // box model
+    margin: 0;
+    margin-bottom: 0.25em;
+    padding: 20px;
+    padding-top: 40px;
+
+    // typography
+    color: $white;
+    font-family: $titleFont;
+    font-size: 2.5rem;
+    line-height: 1.25;
+
+    // visual
+    background-color: $golden;
+    box-shadow: -15px 10px 40px -10px rgba($dark, 0.5);
+    text-shadow: -3px 2px 0 $darkGold;
+    
+    @include atTablet {
+        // box model
+        padding: 20px 40px;
+        
+        // typography
+        font-size: 3rem;
+        
+        // visual
+        box-shadow: -5px 10px 15px 0 rgba($dark, 0.25);
+        text-shadow: -4px 3px 0 $darkGold;
+    }
+
+    @include atDesktopL {
+        // box model
+        padding: 25px 50px;
+        padding-left: 120px;
+
+        // typography
+        font-size: 3.5rem;
+    }
+}
+
+// grunge decorative element
+.call__title::before {
+    content: '';
+
+    // positioning
+    position: absolute;
+    left: -20px;
+    top: 0;
+
+    // box model
+    height: 100%;
+    width: 60px;
+
+    // visual
+    background-image: url('./img/deco/gold-v-grunge.svg');
+    background-size: 60px;
+    background-repeat: repeat-y;
+    background-position: center center;
+    transform: rotateY(180deg);
+    z-index: -1;
+}
