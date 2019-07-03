@@ -1,6 +1,7 @@
 .header {
     // box model
     padding: 20px;
+    margin-bottom: 20px;
 }
 
 .header__top {
@@ -86,6 +87,7 @@
 
 .header__button {
     // box model
+    margin-bottom: 40px;
     margin-top: 300px;
 
     // typography
@@ -99,4 +101,3 @@
 .header__achievements {
 
 }
-
