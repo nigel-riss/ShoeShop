@@ -12,7 +12,7 @@ html(lang="en")
             .header__top
                 .header__logo: img(src="./img/family-logo.svg", alt="Логотип Oldboy Family")
 
-                .header__menu
+                .header__menu.header__menu--hidden
                     nav.main-nav
                         ul.main-nav__list
                             li.main-nav__item: a(href="#").main-nav__link Главная
@@ -23,6 +23,9 @@ html(lang="en")
 
                 .header__city-select
                     a(href="choose-city.html").city-select Топ города&nbsp;<span class="city-select__triangle">▼</span> <br><em>для открытия <br>барбершопа</em>
+
+                .menu-button.menu-button--close
+                    .menu-button__middle
 
             .header__content
                 p.header__shadow-text франшиза <br><strong>Oldboy</strong> <br>barbershop

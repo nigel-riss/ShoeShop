@@ -23,8 +23,25 @@
 }
 
 .header__menu {
+    // positioning
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 777;
+
     // box model
-    display: none;
+    width: 100%;
+    max-width: 400px;
+
+    // visual
+    opacity: 0.9;
+    transition: all 0.3s ease-out;
+
+    &--hidden {
+        // positioning
+        right: -110%;
+    }
 }
 
 .header__city-select {
