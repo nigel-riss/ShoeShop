@@ -2,6 +2,9 @@
     // box model
     padding: 20px;
     margin-bottom: 20px;
+
+    // visual
+    overflow-x: hidden;
 }
 
 .header__top {
@@ -54,7 +57,7 @@
     position: relative;
 
     // box model
-    padding-top: 60px;
+    padding-top: 40px;
 }
 
 .header__shadow-text {
@@ -87,15 +90,12 @@
 
 .header__button {
     // box model
-    margin-bottom: 40px;
-    margin-top: 300px;
-
-    // typography
-    text-align: center;
+    margin-top: 20px;
 }
 
 .header__aside {
-
+    // box model
+    margin-bottom: 60px;
 }
 
 .header__achievements {

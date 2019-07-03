@@ -1,51 +1,63 @@
 .call {
     // positioning
-    position: absolute;
-    right: -25px;
-    top: 250px;
+    position: relative;
     transform: skewY(-15deg);
-    // z-index: 8;
 
     // box model
-    width: 95%;
-    // max-width: 325px;
-    max-width: 325px;
+    width: 220px;
+    margin-left: auto;
+    margin-right: -20px;
+    padding: 15px 21px;
 
-    @include atTablet {
-        // box model
-        max-width: inherit;
-        width: 350px;
-    }
+    // typography
+    color: $white;
+    font-family: $titleFont;
+    font-size: 2rem;
+    line-height: 1;
+    text-align: right;
 
-    @include atDesktopL {
-        // box model
-        width: 500px;
-    }
+    // visual
+    background-color: $golden;
+
+    // @include atTablet {
+    //     // box model
+    //     max-width: inherit;
+    //     width: 350px;
+    // }
+
+    // @include atDesktopL {
+    //     // box model
+    //     width: 500px;
+    // }
 }
 
-.call__text {
-    // // box model
-    // padding: 20px;
-    // margin-bottom: -20px;
-    // positioning
-    position: absolute;
-    top: 20px;
-    left: 20px;
-
+.call small {
     // box model
-    margin: 0;
+    display: block;
 
     // typography
     color: $dark;
-    font-family: $titleFont;
-    font-size: 1.5rem;
-    font-weight: 900;
-    letter-spacing: 0.1rem;
-    text-transform: uppercase;
+    font-size: 0.75em;
+}
 
-    // visual
-    z-index: 5;
-    // background-color: $golden;
+.call strong {
+    // box model
+    display: block;
+
+    // typography
+    font-size: 1.5em;
+}
+
+.call__rub {
+    // positioning
+    position: relative;
+}
+
+.call__rub::after {
+    content: "";
+
+    // positioning
+    position: absolute;
 }
 
 .call__title {
@@ -93,23 +105,23 @@
 }
 
 // grunge decorative element
-.call__title::before {
+.call::before {
     content: '';
 
     // positioning
     position: absolute;
     left: -20px;
     top: 0;
+    z-index: -1;
+    transform: rotateY(180deg);
 
     // box model
     height: 100%;
-    width: 60px;
+    width: 20px;
 
     // visual
     background-image: url('./img/deco/gold-v-grunge.svg');
     background-size: 60px;
     background-repeat: repeat-y;
-    background-position: center center;
-    transform: rotateY(180deg);
-    z-index: -1;
+    background-position: bottom right;
 }

@@ -193,7 +193,8 @@ body {
 
 .header {
   padding: 20px;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  overflow-x: hidden; }
 
 .header__top {
   display: flex;
@@ -223,7 +224,7 @@ body {
 
 .header__content {
   position: relative;
-  padding-top: 60px; }
+  padding-top: 40px; }
 
 .header__shadow-text {
   position: absolute;
@@ -242,9 +243,10 @@ body {
   font-size: 1.5em; }
 
 .header__button {
-  margin-bottom: 40px;
-  margin-top: 300px;
-  text-align: center; }
+  margin-top: 20px; }
+
+.header__aside {
+  margin-bottom: 60px; }
 
 .header-caption {
   margin: 0;
@@ -355,6 +357,7 @@ body {
   vertical-align: top;
   padding: 0 2rem;
   color: #4f5362;
+  font-size: 0.85rem;
   font-weight: 700;
   letter-spacing: 0.025em;
   line-height: 3rem;
@@ -365,32 +368,34 @@ body {
   border-radius: calc(1.5rem + 4px); }
 
 .call {
-  position: absolute;
-  right: -25px;
-  top: 250px;
+  position: relative;
   transform: skewY(-15deg);
-  width: 95%;
-  max-width: 325px; }
-  @media (min-width: 700px) {
-    .call {
-      max-width: inherit;
-      width: 350px; } }
-  @media (min-width: 1500px) {
-    .call {
-      width: 500px; } }
-
-.call__text {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  margin: 0;
-  color: #4f5362;
+  width: 220px;
+  margin-left: auto;
+  margin-right: -20px;
+  padding: 15px 21px;
+  color: #ffffff;
   font-family: "Rex", Arial, Helvetica, sans-serif;
-  font-size: 1.5rem;
-  font-weight: 900;
-  letter-spacing: 0.1rem;
-  text-transform: uppercase;
-  z-index: 5; }
+  font-size: 2rem;
+  line-height: 1;
+  text-align: right;
+  background-color: #d6a354; }
+
+.call small {
+  display: block;
+  color: #4f5362;
+  font-size: 0.75em; }
+
+.call strong {
+  display: block;
+  font-size: 1.5em; }
+
+.call__rub {
+  position: relative; }
+
+.call__rub::after {
+  content: "";
+  position: absolute; }
 
 .call__title {
   position: relative;
@@ -418,19 +423,19 @@ body {
       padding-left: 120px;
       font-size: 3.5rem; } }
 
-.call__title::before {
+.call::before {
   content: '';
   position: absolute;
   left: -20px;
   top: 0;
+  z-index: -1;
+  transform: rotateY(180deg);
   height: 100%;
-  width: 60px;
+  width: 20px;
   background-image: url("./img/deco/gold-v-grunge.svg");
   background-size: 60px;
   background-repeat: repeat-y;
-  background-position: center center;
-  transform: rotateY(180deg);
-  z-index: -1; }
+  background-position: bottom right; }
 
 .achievements {
   display: flex;
@@ -472,7 +477,7 @@ body {
 
 .section-header {
   transform: skewY(-15deg);
-  width: 95%;
+  width: 90%;
   max-width: 325px; }
   @media (min-width: 700px) {
     .section-header {
@@ -513,11 +518,11 @@ body {
   right: -20px;
   top: 0;
   height: 100%;
-  width: 60px;
+  width: 20px;
   background-image: url("./img/deco/gold-v-grunge.svg");
   background-size: 60px;
   background-repeat: repeat-y;
-  background-position: center center; }
+  background-position: center right; }
 
 .section-header__subtitle {
   position: absolute;
