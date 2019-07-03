@@ -13,11 +13,13 @@
     color: $white;
     font-family: $titleFont;
     font-size: 2rem;
-    line-height: 1;
+    line-height: 1.05;
     text-align: right;
 
     // visual
     background-color: $golden;
+    text-shadow: -2px 2px 0 $darkGold;
+    box-shadow: -15px 10px 40px -10px rgba($dark, 0.5);
 
     // @include atTablet {
     //     // box model
@@ -38,6 +40,9 @@
     // typography
     color: $dark;
     font-size: 0.75em;
+
+    // visual
+    text-shadow: -1px 1px 0 rgba($white, 0.5);
 }
 
 .call strong {
@@ -58,50 +63,38 @@
 
     // positioning
     position: absolute;
+    bottom: 14px;
+    left: 1px;
+
+    // box model
+    height: 3px;
+    width: 12px;
+
+    // visual
+    background-color: $white;
+}
+
+.call__rub::before {
+    content: "";
+
+    // positioning
+    position: absolute;
+    bottom: 12px;
+    left: -1px;
+    z-index: -2;
+
+    // box model
+    height: 3px;
+    width: 12px;
+
+    // visual
+    background-color: $darkGold;
 }
 
 .call__title {
-    // positioning
-    position: relative;
-    z-index: 2;
-
-    // box model
-    margin: 0;
-    margin-bottom: 0.25em;
-    padding: 20px;
-    padding-top: 40px;
-
-    // typography
-    color: $white;
-    font-family: $titleFont;
-    font-size: 2.5rem;
-    line-height: 1.25;
-
     // visual
     background-color: $golden;
-    box-shadow: -15px 10px 40px -10px rgba($dark, 0.5);
     text-shadow: -3px 2px 0 $darkGold;
-    
-    @include atTablet {
-        // box model
-        padding: 20px 40px;
-        
-        // typography
-        font-size: 3rem;
-        
-        // visual
-        box-shadow: -5px 10px 15px 0 rgba($dark, 0.25);
-        text-shadow: -4px 3px 0 $darkGold;
-    }
-
-    @include atDesktopL {
-        // box model
-        padding: 25px 50px;
-        padding-left: 120px;
-
-        // typography
-        font-size: 3.5rem;
-    }
 }
 
 // grunge decorative element
@@ -117,7 +110,7 @@
 
     // box model
     height: 100%;
-    width: 20px;
+    width: 25px;
 
     // visual
     background-image: url('./img/deco/gold-v-grunge.svg');

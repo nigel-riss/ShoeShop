@@ -377,14 +377,17 @@ body {
   color: #ffffff;
   font-family: "Rex", Arial, Helvetica, sans-serif;
   font-size: 2rem;
-  line-height: 1;
+  line-height: 1.05;
   text-align: right;
-  background-color: #d6a354; }
+  background-color: #d6a354;
+  text-shadow: -2px 2px 0 #896322;
+  box-shadow: -15px 10px 40px -10px rgba(79, 83, 98, 0.5); }
 
 .call small {
   display: block;
   color: #4f5362;
-  font-size: 0.75em; }
+  font-size: 0.75em;
+  text-shadow: -1px 1px 0 rgba(255, 255, 255, 0.5); }
 
 .call strong {
   display: block;
@@ -395,33 +398,26 @@ body {
 
 .call__rub::after {
   content: "";
-  position: absolute; }
+  position: absolute;
+  bottom: 14px;
+  left: 1px;
+  height: 3px;
+  width: 12px;
+  background-color: #ffffff; }
+
+.call__rub::before {
+  content: "";
+  position: absolute;
+  bottom: 12px;
+  left: -1px;
+  z-index: -2;
+  height: 3px;
+  width: 12px;
+  background-color: #896322; }
 
 .call__title {
-  position: relative;
-  z-index: 2;
-  margin: 0;
-  margin-bottom: 0.25em;
-  padding: 20px;
-  padding-top: 40px;
-  color: #ffffff;
-  font-family: "Rex", Arial, Helvetica, sans-serif;
-  font-size: 2.5rem;
-  line-height: 1.25;
   background-color: #d6a354;
-  box-shadow: -15px 10px 40px -10px rgba(79, 83, 98, 0.5);
   text-shadow: -3px 2px 0 #896322; }
-  @media (min-width: 700px) {
-    .call__title {
-      padding: 20px 40px;
-      font-size: 3rem;
-      box-shadow: -5px 10px 15px 0 rgba(79, 83, 98, 0.25);
-      text-shadow: -4px 3px 0 #896322; } }
-  @media (min-width: 1500px) {
-    .call__title {
-      padding: 25px 50px;
-      padding-left: 120px;
-      font-size: 3.5rem; } }
 
 .call::before {
   content: '';
@@ -431,7 +427,7 @@ body {
   z-index: -1;
   transform: rotateY(180deg);
   height: 100%;
-  width: 20px;
+  width: 25px;
   background-image: url("./img/deco/gold-v-grunge.svg");
   background-size: 60px;
   background-repeat: repeat-y;
@@ -518,7 +514,7 @@ body {
   right: -20px;
   top: 0;
   height: 100%;
-  width: 20px;
+  width: 25px;
   background-image: url("./img/deco/gold-v-grunge.svg");
   background-size: 60px;
   background-repeat: repeat-y;
