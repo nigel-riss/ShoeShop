@@ -1,0 +1,25 @@
+.require-list {
+    // box model
+    padding: 0 10px;
+}
+
+.require-list__item {
+    // box model
+    margin-bottom: 10px;
+
+    // typography
+    font-size: 0.85rem;
+    letter-spacing: 0.025em;
+    line-height: 1.5;
+    text-transform: uppercase;
+
+    // visual
+    list-style-type: none;
+}
+
+.require-list__item em {
+    // typography
+    color: $golden;
+    font-style: normal;
+    font-weight: 700;
+}

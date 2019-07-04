@@ -1,0 +1,32 @@
+.include-list {
+    // box model
+    padding: 0;
+    padding: 0 10px;
+
+    // visual
+    counter-reset: item;
+}
+
+.include-list__item {
+    // box model
+    margin-bottom: 10px;
+    
+    // typography
+    letter-spacing: 0.025em;
+    line-height: 1.5;
+    text-transform: uppercase;
+
+    // visual
+    list-style-type: none;
+}
+
+.include-list__item::before {
+    counter-increment: item;
+    content: counter(item, decimal-leading-zero) ".";
+
+    // box model
+    margin-right: 5px;
+
+    // typography
+    font-weight: 700;
+}

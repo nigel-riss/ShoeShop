@@ -751,6 +751,8 @@ body {
   padding-bottom: 20px;
   border: 1px solid rgba(168, 172, 185, 0.25);
   border-radius: 10px; }
+  .card--white {
+    background-color: #ffffff; }
 
 .card__title {
   display: inline-block;
@@ -852,11 +854,46 @@ body {
 
 .ad-content__headline em {
   color: #d6a354;
-  font-style: normal; }
+  font-style: normal;
+  font-weight: 700; }
 
 .ad-content__desc {
   margin: 0;
   font-size: 0.8rem; }
+
+.include-list {
+  padding: 0;
+  padding: 0 10px;
+  counter-reset: item; }
+
+.include-list__item {
+  margin-bottom: 10px;
+  letter-spacing: 0.025em;
+  line-height: 1.5;
+  text-transform: uppercase;
+  list-style-type: none; }
+
+.include-list__item::before {
+  counter-increment: item;
+  content: counter(item, decimal-leading-zero) ".";
+  margin-right: 5px;
+  font-weight: 700; }
+
+.require-list {
+  padding: 0 10px; }
+
+.require-list__item {
+  margin-bottom: 10px;
+  font-size: 0.85rem;
+  letter-spacing: 0.025em;
+  line-height: 1.5;
+  text-transform: uppercase;
+  list-style-type: none; }
+
+.require-list__item em {
+  color: #d6a354;
+  font-style: normal;
+  font-weight: 700; }
 
 .support-item {
   margin: 0 auto;
