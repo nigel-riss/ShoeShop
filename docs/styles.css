@@ -840,6 +840,24 @@ body {
   line-height: 1.5;
   transition: all 0.25s ease-out; }
 
+.ad-content {
+  text-align: center; }
+
+.ad-content__headline {
+  margin: 0;
+  margin-bottom: 30px;
+  letter-spacing: 0.025em;
+  line-height: 1.5;
+  text-transform: uppercase; }
+
+.ad-content__headline em {
+  color: #d6a354;
+  font-style: normal; }
+
+.ad-content__desc {
+  margin: 0;
+  font-size: 0.8rem; }
+
 .support-item {
   margin: 0 auto;
   margin-bottom: 40px;
