@@ -7,11 +7,9 @@
     // border
     border: 1px solid rgba($greyIcon, 0.25);
     border-radius: 10px;
-
-    &--white {
-        // visual
-        background-color: $white;
-    }
+    
+    // visual
+    background-color: $white;
 }
 
 .card__title {

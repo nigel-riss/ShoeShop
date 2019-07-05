@@ -1,12 +1,12 @@
 .section {
     // box model
-    margin-bottom: 60px;
+    // margin-bottom: 60px;
 }
 
 .section__header {
-    // box model
-    margin-bottom: 80px;
-
+    // positioning
+    position: relative;
+    z-index: 2;
 
     @include atTablet {
         // box model
@@ -18,7 +18,51 @@
     // box model
     margin: 0 auto;
     max-width: 1200px;
-    padding: 20px;
+    padding: 60px 20px;
+}
+
+.section__content--bianca {
+    // positioning
+    position: relative;
+
+    // visual
+    background-color: $bianca;
+}
+
+.section__content--bianca::before {
+    content: "";
+
+    // positioning
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 1px;
+    transform: translateY(-100%);
+
+    // box model
+    height: 26.8vw;
+    width: 100vw;
+
+    // visual
+    background-image: url('./img/deco/angle-top.svg');
+}
+
+.section__content--bianca::after {
+    content: "";
+
+    // positioning
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 1px;
+    transform: translateY(100%);
+
+    // box model
+    height: 26.8vw;
+    width: 100vw;
+
+    // visual
+    background-image: url('./img/deco/angle-bot.svg');
 }
 
 .section__shadow-text {
