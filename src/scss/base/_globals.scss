@@ -13,6 +13,9 @@ html {
 body {
     // box model
     box-sizing: border-box;
+
+    // visual
+    overflow-x: hidden;
 }
 
 *,
