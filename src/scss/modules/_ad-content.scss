@@ -1,0 +1,30 @@
+.ad-content {
+    // typography
+    text-align: center;
+}
+
+.ad-content__headline {
+    // box model
+    margin: 0;
+    margin-bottom: 30px;
+
+    // typography
+    letter-spacing: 0.025em;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+.ad-content__headline em {
+    // typography
+    color: $golden;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.ad-content__desc {
+    // box model
+    margin: 0;
+
+    // typography
+    font-size: 0.8rem;
+}
