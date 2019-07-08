@@ -687,6 +687,40 @@ body {
   font-weight: 700;
   text-transform: uppercase; }
 
+.oldboy-logo {
+  display: flex; }
+
+.oldboy-logo__image {
+  flex-basis: 50%;
+  margin-right: 10px;
+  width: 150px; }
+
+.oldboy-logo__text {
+  flex-basis: 50%;
+  max-width: 45%;
+  margin: 0;
+  font-family: "Rex", Arial, Helvetica, sans-serif;
+  font-size: 3.2vw;
+  line-height: 1.5;
+  text-transform: uppercase; }
+
+.oldboy-logo__text::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  margin-bottom: 5px;
+  background-image: linear-gradient(to right, rgba(214, 163, 84, 0.55), rgba(214, 163, 84, 0.75), #d6a354); }
+
+.oldboy-logo__text::after {
+  content: "";
+  display: block;
+  width: 160%;
+  height: 4px;
+  margin-left: -60%;
+  margin-top: 5px;
+  background-image: linear-gradient(to right, rgba(214, 163, 84, 0.25), rgba(214, 163, 84, 0.75), #d6a354); }
+
 .sales-contact {
   display: inline-block;
   vertical-align: top;
