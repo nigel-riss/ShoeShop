@@ -604,6 +604,34 @@ body {
   font-style: normal;
   font-weight: 700; }
 
+.score {
+  padding: 30px 0; }
+
+.score__board {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  font-family: "Rex", Arial, Helvetica, sans-serif;
+  text-align: center; }
+
+.score__value {
+  color: #d6a354;
+  font-size: 3rem; }
+
+.score__desc {
+  font-size: 0.85rem; }
+
+.score__main {
+  text-align: center; }
+
+.score__main-value {
+  font-size: 9rem;
+  font-weight: 900; }
+
+.score__main-desc {
+  font-family: "Rex", Arial, Helvetica, sans-serif;
+  font-size: 0.85rem; }
+
 .timeline {
   position: relative;
   padding: 20px; }
@@ -663,6 +691,7 @@ body {
   display: inline-block;
   vertical-align: top;
   width: 100%;
+  border: 2px dashed fuchsia;
   font-family: "Rex", Arial, Helvetica, sans-serif;
   font-size: 2.39vw; }
 
@@ -675,7 +704,7 @@ body {
 
 .sales-contact__phone {
   color: #d6a354;
-  font-size: 5em;
+  font-size: 4.8em;
   text-decoration: none;
   transition: opacity 0.15s ease-out; }
 
