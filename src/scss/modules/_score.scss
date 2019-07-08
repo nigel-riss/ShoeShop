@@ -1,0 +1,43 @@
+.score {
+    // box model
+    padding: 30px 0;
+}
+
+.score__board {
+    // box model
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+
+    // typography
+    font-family: $titleFont;
+    text-align: center;
+}
+
+.score__value {
+    // typography
+    color: $golden;
+    font-size: 3rem;
+}
+
+.score__desc {
+    // typography
+    font-size: 0.85rem;
+}
+
+.score__main {
+    // typography
+    text-align: center;
+}
+
+.score__main-value {
+    // typography
+    font-size: 9rem;
+    font-weight: 900;
+}
+
+.score__main-desc {
+    // typography
+    font-family: $titleFont;
+    font-size: 0.85rem;
+}
