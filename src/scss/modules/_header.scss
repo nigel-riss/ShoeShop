@@ -8,6 +8,9 @@
 }
 
 .header__top {
+    // positioning
+    position: relative;
+
     // box model
     display: flex;
     justify-content: space-between;
@@ -36,7 +39,6 @@
 
     // box model
     width: 100%;
-    max-width: 400px;
 
     // visual
     opacity: 0.9;
@@ -45,6 +47,32 @@
     &--hidden {
         // positioning
         right: -110%;
+    }
+
+    @include atDesktopS {
+        // positioning
+        position: absolute;
+        top: 0;
+        left: 125px;
+        
+        // visual
+        visibility: visible;
+        opacity: 1;
+    }
+
+    @include atDesktopM {
+        // positioning
+        left: 260px;
+    }
+
+    @include atDesktopL {
+        // positioning
+        left: 320px;
+    }
+
+    @include atFullHD {
+        // positioning
+        left: 400px;
     }
 }
 

@@ -12,7 +12,7 @@ const dirs = {
   pug: './src/pug/**/*.pug',
   scss: './src/scss/**/*.scss',
   styles: './src/scss/styles.scss',
-  // js: './src/js/**/*.js',
+  js: './src/js/**/*.js',
   dist: './docs',
   svg: './src/img/**/*.svg',
 };
@@ -37,14 +37,32 @@ let styles = () => gulp.src(dirs.styles)
   .pipe(gulp.dest(dirs.dist))
   .pipe(browserSync.reload({stream: true}));
 
+  const config = {
+    entry: {
+      main: './src/js/main.js',
+      scripts: './src/js/scripts.js'
+    },
+  
+    output: {
+      filename: '[name].js'
+    },
+  
+    // mode: 'production'
+    mode: 'development'
+  };
+  
+  const dirs = {
+    js: './src/js/**/*.js',
+    dest: './docs'
+  };
 
  /**
  * Compiles js files
  */
-// let scripts = () => (
-//   gulp.src(dirs.js)
-//     .pipe(gulp.dest(dirs.dist))
-// );
+let scripts = () => (
+  gulp.src(dirs.js)
+    .pipe(gulp.dest(dirs.dist))
+);
 
 
 /**
@@ -79,10 +97,10 @@ let watch = () => {
   gulp.watch(dirs.svg, gulp.series(pugRender, browserSyncReload));
   gulp.watch(dirs.scss, gulp.parallel(styles));
   // gulp.watch(dirs.scss, gulp.series(styles));
-  // gulp.watch(dirs.js, gulp.series(scripts, browserSyncReload));
+  gulp.watch(dirs.js, gulp.series(scripts, browserSyncReload));
 };
 
 exports.pugRender = pugRender;
 exports.styles = styles;
-// exports.scripts = scripts;
+exports.scripts = scripts;
 exports.watch = watch;
