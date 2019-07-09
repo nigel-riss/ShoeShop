@@ -16,12 +16,6 @@
     cursor: pointer;
     transition: all 0.25s ease-out;
 
-    @include atTablet {
-        // positioning
-        right: 33px;
-        top: 45px;
-    }
-
     @include atDesktopS {
         // box model
         display: none;
