@@ -195,14 +195,18 @@ body {
 .header {
   padding: 20px;
   margin-bottom: 50px;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  background-image: url("./img/bgs/header-s.jpg");
+  background-repeat: no-repeat;
+  background-size: 700px;
+  background-position: center top -20px; }
 
 .header__top {
   position: relative;
   display: flex;
   justify-content: space-between;
   margin-bottom: 5px;
-  padding-right: 50px; }
+  padding-right: 60px; }
 
 .header__logo {
   width: 95px; }
@@ -241,7 +245,7 @@ body {
 
 .header__content {
   position: relative;
-  padding-top: 40px; }
+  padding-top: 80px; }
 
 .header__shadow-text {
   position: absolute;
@@ -259,6 +263,9 @@ body {
 .header__shadow-text strong {
   font-size: 1.5em; }
 
+.header__caption {
+  max-width: 300px; }
+
 .header__button {
   margin-top: 20px; }
 
@@ -271,6 +278,9 @@ body {
   font-family: "Rex", Arial, Helvetica, sans-serif;
   font-size: 8vw;
   line-height: 1.2em; }
+  @media (min-width: 400px) {
+    .header-caption {
+      font-size: 32px; } }
 
 .header-caption strong {
   display: inline-block;
@@ -595,7 +605,7 @@ body {
 .section-header {
   transform: skewY(-15deg);
   width: 90%;
-  max-width: 325px; }
+  max-width: 250px; }
   @media (min-width: 700px) {
     .section-header {
       max-width: inherit;
@@ -610,6 +620,7 @@ body {
   margin: 0;
   margin-bottom: 0.25em;
   padding: 20px;
+  padding-bottom: 15px;
   color: #ffffff;
   font-family: "Rex", Arial, Helvetica, sans-serif;
   font-size: 2.5rem;

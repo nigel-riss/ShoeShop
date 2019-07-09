@@ -7,6 +7,11 @@
     font-family: $titleFont;
     font-size: 8vw;
     line-height: 1.2em;
+
+    @media (min-width: 400px) {
+        // typography
+        font-size: 32px;
+    }
 }
 
 .header-caption strong {

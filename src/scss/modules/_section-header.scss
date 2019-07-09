@@ -8,7 +8,7 @@
     // box model
     width: 90%;
     // max-width: 325px;
-    max-width: 325px;
+    max-width: 250px;
 
     @include atTablet {
         // box model
@@ -31,6 +31,7 @@
     margin: 0;
     margin-bottom: 0.25em;
     padding: 20px;
+    padding-bottom: 15px;
 
     // typography
     color: $white;
