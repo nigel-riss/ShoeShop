@@ -37,25 +37,6 @@ let styles = () => gulp.src(dirs.styles)
   .pipe(gulp.dest(dirs.dist))
   .pipe(browserSync.reload({stream: true}));
 
-  const config = {
-    entry: {
-      main: './src/js/main.js',
-      scripts: './src/js/scripts.js'
-    },
-  
-    output: {
-      filename: '[name].js'
-    },
-  
-    // mode: 'production'
-    mode: 'development'
-  };
-  
-  const dirs = {
-    js: './src/js/**/*.js',
-    dest: './docs'
-  };
-
  /**
  * Compiles js files
  */
