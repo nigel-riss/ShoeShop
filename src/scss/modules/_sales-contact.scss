@@ -2,12 +2,12 @@
     // box model
     display: inline-block;
     vertical-align: top;
-    width: 100%;
-    border: 2px dashed fuchsia;
+    // width: 100%;
+    // border: 2px dashed fuchsia;
 
     // typography
     font-family: $titleFont;
-    font-size: 2.39vw;
+    font-size: 1rem;
 }
 
 .sales-contact__title {
@@ -15,7 +15,7 @@
     margin: 0;
 
     // typography
-    font-size: 2em;
+    font-size: 1em;
 
     @include atTablet {
         // typography
@@ -26,7 +26,7 @@
 .sales-contact__phone {
     // typography
     color: $golden;
-    font-size: 4.8em;
+    font-size: 2.5em;
     text-decoration: none;
 
     // visual
@@ -43,7 +43,7 @@
     margin: 0;
 
     // typography
-    font-size: 2em;
+    font-size: 1em;
     text-align: right;
 
     @include atTablet {

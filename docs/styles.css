@@ -249,12 +249,12 @@ body {
 
 .header__shadow-text {
   position: absolute;
-  left: -10vw;
-  top: 0;
-  z-index: -1;
+  left: -7.5vw;
+  top: 40px;
+  z-index: 1;
   margin: 0;
   padding: 0;
-  color: #f7f7f7;
+  color: rgba(79, 83, 98, 0.05);
   font-size: 15vw;
   font-weight: 900;
   line-height: 0.9;
@@ -264,12 +264,16 @@ body {
   font-size: 1.5em; }
 
 .header__caption {
+  position: relative;
+  z-index: 2;
   max-width: 300px; }
 
 .header__button {
   margin-top: 20px; }
 
 .header__aside {
+  position: relative;
+  z-index: 2;
   margin-bottom: 60px; }
 
 .header-caption {
@@ -693,9 +697,17 @@ body {
       top: 1rem;
       height: 3px; } }
 
+.content--center {
+  text-align: center; }
+
 .content h3 {
+  padding-top: 1rem;
   font-family: "Rex", Arial, Helvetica, sans-serif;
   font-size: 1.5rem; }
+
+.content h3 em {
+  color: #d6a354;
+  font-style: normal; }
 
 .content p {
   margin: 0;
@@ -827,21 +839,19 @@ body {
 .sales-contact {
   display: inline-block;
   vertical-align: top;
-  width: 100%;
-  border: 2px dashed fuchsia;
   font-family: "Rex", Arial, Helvetica, sans-serif;
-  font-size: 2.39vw; }
+  font-size: 1rem; }
 
 .sales-contact__title {
   margin: 0;
-  font-size: 2em; }
+  font-size: 1em; }
   @media (min-width: 700px) {
     .sales-contact__title {
       font-size: 1em; } }
 
 .sales-contact__phone {
   color: #d6a354;
-  font-size: 4.8em;
+  font-size: 2.5em;
   text-decoration: none;
   transition: opacity 0.15s ease-out; }
 
@@ -850,7 +860,7 @@ body {
 
 .sales-contact__name {
   margin: 0;
-  font-size: 2em;
+  font-size: 1em;
   text-align: right; }
   @media (min-width: 700px) {
     .sales-contact__name {
@@ -1031,6 +1041,11 @@ body {
   margin: 0;
   line-height: 1.5;
   transition: all 0.25s ease-out; }
+
+h3.featured-title {
+  color: #d6a354;
+  font-family: "Rex", Arial, Helvetica, sans-serif;
+  font-size: 2rem; }
 
 .ad-content {
   text-align: center; }

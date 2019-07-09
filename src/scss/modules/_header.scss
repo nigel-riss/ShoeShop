@@ -95,16 +95,16 @@
 .header__shadow-text {
     // positioning
     position: absolute;
-    left: -10vw;
-    top: 0;
-    z-index: -1;
+    left: -7.5vw;
+    top: 40px;
+    z-index: 1;
 
     // box model
     margin: 0;
     padding: 0;
 
     // typography
-    color: $shadowWhite;
+    color: rgba($dark, 0.05);
     font-size: 15vw;
     font-weight: 900;
     line-height: 0.9;
@@ -117,6 +117,10 @@
 }
 
 .header__caption {
+    // positioning
+    position: relative;
+    z-index: 2;
+
     // box model
     max-width: 300px;
     // border: 2px dashed fuchsia;
@@ -128,6 +132,10 @@
 }
 
 .header__aside {
+    // positioning
+    position: relative;
+    z-index: 2;
+
     // box model
     margin-bottom: 60px;
 }
