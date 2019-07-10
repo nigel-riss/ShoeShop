@@ -894,13 +894,20 @@ body {
     margin-bottom: 1rem; }
 
 .indicator__value {
+  margin-bottom: 0.125em;
   color: #d6a354;
   letter-spacing: 0.025em;
-  font-size: 2rem;
+  text-transform: none;
+  font-size: 1.5rem;
   font-weight: 900; }
   @media (min-width: 700px) {
     .indicator__value {
       font-size: 4rem; } }
+
+.indicator__value em {
+  font-size: 0.85rem;
+  font-style: normal;
+  text-transform: uppercase; }
 
 .indicator__value small {
   display: inline-block;
