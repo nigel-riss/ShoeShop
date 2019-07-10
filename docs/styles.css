@@ -1066,6 +1066,24 @@ h3.featured-title {
   margin: 0;
   font-size: 0.8rem; }
 
+.saving-promo {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  text-align: center; }
+
+h3.saving-promo__title {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5; }
+
+.saving-promo__value {
+  color: #d6a354;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-size: 15vw;
+  font-weight: 900; }
+
+.saving-promo__subtitle {
+  text-transform: uppercase; }
+
 .include-list {
   padding: 0;
   padding: 0 10px;
