@@ -634,6 +634,9 @@ body {
   margin: 0 auto;
   max-width: 1200px;
   padding: 60px 20px; }
+  @media (min-width: 700px) {
+    .section__content {
+      padding: 60px 40px; } }
 
 .section__content--bianca {
   position: relative;
@@ -783,38 +786,33 @@ body {
   font-style: normal;
   font-weight: 700; }
 
-.score {
-  padding: 30px 0; }
+.history {
+  position: relative; }
 
-.score__board {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 10px;
-  font-family: "Rex", Arial, Helvetica, sans-serif;
-  text-align: center; }
+@media (min-width: 700px) {
+  .history__timeline {
+    padding-top: 40px;
+    width: 350px; } }
 
-.score__value {
-  color: #d6a354;
-  font-size: 3rem; }
+.history__ceo {
+  display: none; }
+  @media (min-width: 700px) {
+    .history__ceo {
+      position: absolute;
+      right: 40px;
+      top: 0;
+      display: block;
+      width: 350px;
+      width: calc(100% - 430px);
+      max-width: 400px; } }
 
-.score__desc {
-  font-size: 0.85rem; }
-
-.score__main {
-  text-align: center; }
-
-.score__main-value {
-  font-size: 9rem;
-  font-weight: 900; }
-
-.score__main-desc {
-  font-family: "Rex", Arial, Helvetica, sans-serif;
-  font-size: 0.85rem; }
+.photo img {
+  width: 100%; }
 
 .timeline {
   position: relative;
   padding: 20px; }
-  @media (min-width: 700px) {
+  @media (min-width: 1200px) {
     .timeline {
       padding: 40px; } }
 
@@ -837,7 +835,7 @@ body {
   color: #d6a354;
   font-family: "Rex", Arial, Helvetica, sans-serif;
   font-size: 2.5rem; }
-  @media (min-width: 700px) {
+  @media (min-width: 1200px) {
     .timeline__date {
       font-size: 3.5rem; } }
 
@@ -851,7 +849,7 @@ body {
   width: 6px;
   background-color: #d6a354;
   border-radius: 50%; }
-  @media (min-width: 700px) {
+  @media (min-width: 1200px) {
     .timeline__date::before {
       left: -43px;
       height: 9px;
@@ -899,6 +897,34 @@ body {
   margin-left: -60%;
   margin-top: 5px;
   background-image: linear-gradient(to right, rgba(214, 163, 84, 0.25), rgba(214, 163, 84, 0.75), #d6a354); }
+
+.score {
+  padding: 30px 0; }
+
+.score__board {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  font-family: "Rex", Arial, Helvetica, sans-serif;
+  text-align: center; }
+
+.score__value {
+  color: #d6a354;
+  font-size: 3rem; }
+
+.score__desc {
+  font-size: 0.85rem; }
+
+.score__main {
+  text-align: center; }
+
+.score__main-value {
+  font-size: 9rem;
+  font-weight: 900; }
+
+.score__main-desc {
+  font-family: "Rex", Arial, Helvetica, sans-serif;
+  font-size: 0.85rem; }
 
 .sales-contact {
   display: inline-block;
