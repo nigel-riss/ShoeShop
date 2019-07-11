@@ -1054,6 +1054,68 @@ h3.featured-title {
   font-family: "Rex", Arial, Helvetica, sans-serif;
   font-size: 2rem; }
 
+.featured-subtitle {
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase; }
+
+.stage-list__content {
+  position: relative;
+  padding: 20px; }
+
+.stage-list__content::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  height: 100%;
+  width: 2px;
+  background-image: linear-gradient(rgba(242, 226, 201, 0.8), #f2e2c9, #f2e2c9, #f2e2c9, rgba(242, 226, 201, 0.8)); }
+
+.stage-item__title {
+  position: relative;
+  color: #d6a354;
+  letter-spacing: 0.025em;
+  text-transform: none;
+  font-size: 1.5rem;
+  font-weight: 900; }
+
+.stage-item__title::before {
+  content: "";
+  position: absolute;
+  left: -22px;
+  top: 0.5em;
+  display: block;
+  height: 6px;
+  width: 6px;
+  background-color: #d6a354;
+  border-radius: 50%; }
+
+.stage-item__input {
+  display: none; }
+
+.stage-item__input + label {
+  position: relative;
+  display: block; }
+
+.stage-item__input + label::after {
+  content: "V";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: block;
+  height: 20px;
+  width: 20px; }
+
+.stage-item__input + label + p {
+  display: none; }
+
+.stage-item__input:checked + label + p {
+  display: block;
+  background: #efefef;
+  padding: 5px; }
+
 .ad-content {
   text-align: center; }
 
