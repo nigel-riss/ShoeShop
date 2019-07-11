@@ -12,6 +12,11 @@
 
     @include atTablet {
         // box model
+        max-width: 280px;
+    }
+
+    @include atDesktopM {
+        // box model
         max-width: inherit;
         width: 350px;
     }
@@ -31,7 +36,7 @@
     margin: 0;
     margin-bottom: 0.25em;
     padding: 20px;
-    padding-bottom: 15px;
+    padding-bottom: 17px;
 
     // typography
     color: $white;
@@ -43,14 +48,19 @@
     background-color: $golden;
     box-shadow: -15px 10px 40px -10px rgba($dark, 0.5);
     text-shadow: -3px 2px 0 $darkGold;
-    
+
     @include atTablet {
         // box model
-        padding: 20px 40px;
+        padding-left: 40px;
         
         // typography
+        font-size: 2.5rem;
+    }
+
+    @include atDesktopM {
+        // typography
         font-size: 3rem;
-        
+
         // visual
         box-shadow: -5px 10px 15px 0 rgba($dark, 0.25);
         text-shadow: -4px 3px 0 $darkGold;

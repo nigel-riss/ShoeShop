@@ -8,7 +8,10 @@
     position: relative;
     z-index: 2;
 
-    @include atTablet {
+    // box model
+    margin-bottom: -30px;
+
+    @include atDesktopM {
         // box model
         margin-bottom: 160px;
     }
