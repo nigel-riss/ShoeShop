@@ -5,7 +5,7 @@
     // box model
     padding: 20px;
 
-    @include atTablet {
+    @include atDesktopM {
         // box model
         padding: 40px;
     }
@@ -46,7 +46,7 @@
     font-family: $titleFont;
     font-size: 2.5rem;
 
-    @include atTablet {
+    @include atDesktopM {
         // typography
         font-size: 3.5rem;
     }
@@ -71,7 +71,7 @@
     // border
     border-radius: 50%;
 
-    @include atTablet {
+    @include atDesktopM {
         // positioning
         left: -43px;
 
