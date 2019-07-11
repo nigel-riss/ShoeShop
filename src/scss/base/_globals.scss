@@ -4,7 +4,7 @@ html {
     font-family: $mainFont;
     font-size: 14px;
 
-    @include atTablet {
+    @include atDesktopM {
         // typography
         font-size: 16px;
     }

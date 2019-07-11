@@ -9,6 +9,19 @@
     background-repeat: no-repeat;
     background-size: 700px;
     background-position: center top -20px;
+
+    @include atTablet {
+        // box model
+        padding: 40px;
+
+        // visual
+        background-position: right top -40px;
+    }
+
+    @include atDesktopS {
+        // box model
+        padding-bottom: 80px;
+    }
 }
 
 .header__top {
@@ -20,11 +33,26 @@
     justify-content: space-between;
     margin-bottom: 5px;
     padding-right: 60px;
+
+    @include atTablet {
+        // box model
+        padding-right: 80px;
+    }
+
+    @include atDesktopS {
+        // box model
+        padding-right: 0;
+    }
 }
 
 .header__logo {
     // box model
     width: 95px;
+
+    @include atTablet {
+        // box model
+        width: 140px;
+    }
 }
 
 .header__logo svg {
@@ -90,6 +118,11 @@
 
     // box model
     padding-top: 80px;
+
+    @include atTablet {
+        // box model
+        padding-top: 40px;
+    }
 }
 
 .header__shadow-text {
@@ -105,15 +138,47 @@
 
     // typography
     color: rgba($dark, 0.05);
+    color: rgba($dark, 0.5);
     font-size: 15vw;
     font-weight: 900;
     line-height: 0.9;
     text-transform: uppercase;
+
+    @include atTablet {
+        // positioning
+        left: -20px;
+        top: -10px;
+
+        // typography
+        color: rgba($dark, 0.075);
+        font-size: 6rem;
+    }
+
+    @include atDesktopS {
+        // typography
+        font-size: 7.5rem;
+    }
 }
 
 .header__shadow-text strong {
     // typography
     font-size: 1.5em;
+
+    @include atTablet {
+        // typography
+        font-size: 1em;
+    }
+}
+
+.header__shadow-text small {
+    @include atTablet {
+        // typography
+        font-size: 1em;
+    }
+
+    @include atDesktopS {
+        
+    }
 }
 
 .header__caption {
@@ -137,9 +202,31 @@
     z-index: 2;
 
     // box model
+    width: 220px;
+    margin-left: auto;
+    margin-right: -20px;
     margin-bottom: 60px;
+
+    @include atTablet {
+        // box model
+        margin-right: -40px;
+        margin-top: 60px;
+    }
+
+    @include atDesktopS {
+        // box model
+        margin-top: -20px;
+    }
 }
 
 .header__achievements {
+    @include atTablet {
+        // box model
+        margin-top: -100px;
+    }
 
+    @include atDesktopS {
+        // box model
+        margin-top: -130px;
+    }
 }

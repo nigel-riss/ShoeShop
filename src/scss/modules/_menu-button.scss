@@ -3,7 +3,7 @@
     position: fixed;
     right: 20px;
     top: 20px;
-    z-index: 888;
+    z-index: 9;
 
     // box model
     height: 48px;
@@ -11,10 +11,18 @@
 
     // visual
     background-color: rgba($dark, 0.5);
-    border: 2px solid $golden;
-    border-radius: 50%;
     cursor: pointer;
     transition: all 0.25s ease-out;
+    
+    // border
+    border: 2px solid $golden;
+    border-radius: 50%;
+
+    @include atTablet {
+        // positioning
+        right: 40px;
+        top: 40px;
+    }
 
     @include atDesktopS {
         // box model
