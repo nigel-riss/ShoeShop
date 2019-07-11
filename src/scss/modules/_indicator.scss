@@ -45,13 +45,13 @@
 
 .indicator__value {
     // box model
-    margin-bottom: 0.125em;
+    // margin-bottom: 0.125em;
 
     // typography
     color: $golden;
     letter-spacing: 0.025em;
     text-transform: none;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 900;
 
     @include atTablet {
