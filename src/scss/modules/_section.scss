@@ -1,6 +1,8 @@
 .section {
-    // box model
-    // margin-bottom: 60px;
+    @include atTablet {
+        // box model
+        margin-bottom: 80px;
+    }
 }
 
 .section__header {

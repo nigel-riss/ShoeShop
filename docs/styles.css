@@ -622,6 +622,10 @@ body {
   color: #d6a354;
   font-style: normal; }
 
+@media (min-width: 700px) {
+  .section {
+    margin-bottom: 80px; } }
+
 .section__header {
   position: relative;
   z-index: 2;
@@ -792,7 +796,7 @@ body {
 @media (min-width: 700px) {
   .history__timeline {
     padding-top: 40px;
-    width: 350px; } }
+    width: 320px; } }
 
 .history__ceo {
   display: none; }
@@ -800,14 +804,26 @@ body {
     .history__ceo {
       position: absolute;
       right: 40px;
-      top: 0;
+      top: 50px;
       display: block;
-      width: 350px;
-      width: calc(100% - 430px);
-      max-width: 400px; } }
+      width: 350px; } }
 
 .photo img {
   width: 100%; }
+
+.photo__caption {
+  position: relative;
+  z-index: 2;
+  margin-top: -40px;
+  padding: 10px 10px;
+  text-align: right;
+  border-top: 2px solid #896322; }
+
+.photo__title {
+  margin: 0;
+  color: #d6a354;
+  font-family: "Rex", Arial, Helvetica, sans-serif;
+  font-size: 1.5rem; }
 
 .timeline {
   position: relative;
