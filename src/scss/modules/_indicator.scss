@@ -44,16 +44,27 @@
 }
 
 .indicator__value {
+    // box model
+    margin-bottom: 0.125em;
+
     // typography
     color: $golden;
     letter-spacing: 0.025em;
-    font-size: 2rem;
+    text-transform: none;
+    font-size: 1.5rem;
     font-weight: 900;
 
     @include atTablet {
         // typography
         font-size: 4rem;
     }
+}
+
+.indicator__value em {
+    // typography
+    font-size: 0.85rem;
+    font-style: normal;
+    text-transform: uppercase;
 }
 
 .indicator__value small {
