@@ -1009,6 +1009,10 @@ body {
     .indicator__value {
       font-size: 4rem; } }
 
+.indicator__value--small {
+  font-size: 1.5rem;
+  letter-spacing: normal; }
+
 .indicator__value em {
   font-size: 0.85rem;
   font-style: normal;
