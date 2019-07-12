@@ -8,7 +8,7 @@
     font-size: 8vw;
     line-height: 1.2em;
 
-    @media (min-width: 400px) {
+    @include atMobile {
         // typography
         font-size: 32px;
     }

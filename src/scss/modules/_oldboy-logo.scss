@@ -1,6 +1,13 @@
 .oldboy-logo {
     // box model
     display: flex;
+    margin: 0 auto;
+    max-width: 350px;
+
+    @include atTablet {
+        // box model
+        max-width: 460px;
+    }
 }
 
 .oldboy-logo__image {
@@ -21,6 +28,16 @@
     font-size: 3.2vw;
     line-height: 1.5;
     text-transform: uppercase;
+
+    @include atMobile {
+        // typography
+        font-size: 0.9rem;
+    }
+
+    @include atTablet {
+        // typography
+        font-size: 1.2rem;
+    }
 }
 
 .oldboy-logo__text::before {
