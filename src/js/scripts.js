@@ -1,5 +1,5 @@
 // 'use strict';
 
-import MobileMenu from './MobileMenu';
+import MobileMenu from './modules/MobileMenu';
 
 const mobileMenu = new MobileMenu();

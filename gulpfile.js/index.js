@@ -5,6 +5,7 @@ const pug = require('gulp-pug');
 const embedSVG = require('gulp-embed-svg');
 const browserSync = require('browser-sync').create();
 const sass = require('gulp-sass');
+const webpack = require('webpack-stream');
 
 
 // Paths
@@ -15,6 +16,21 @@ const dirs = {
   js: './src/js/**/*.js',
   dist: './docs',
   svg: './src/img/**/*.svg',
+};
+
+
+// Webpack config
+const webpackConfig = {
+  entry: {
+    scripts: './src/js/scripts.js',
+  },
+
+  output: {
+    filename: '[name].js'
+  },
+
+  // mode: 'production'
+  mode: 'development'
 };
 
 
@@ -42,6 +58,7 @@ let styles = () => gulp.src(dirs.styles)
  */
 let scripts = () => (
   gulp.src(dirs.js)
+    .pipe(webpack(webpackConfig))
     .pipe(gulp.dest(dirs.dist))
 );
 
