@@ -928,6 +928,9 @@ body {
 .numbers__logo {
   padding-top: 40px; }
 
+.numbers__scoreboard {
+  margin: 0 -20px; }
+
 .score {
   position: relative;
   padding: 30px 0;
@@ -936,6 +939,9 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center bottom; }
+  @media (min-width: 375px) {
+    .score {
+      max-width: 330px; } }
   @media (min-width: 700px) {
     .score {
       max-width: 460px; } }
@@ -945,13 +951,19 @@ body {
   z-index: 2;
   display: flex;
   justify-content: space-between;
-  padding: 0 10px;
+  padding: 0 20px;
   font-family: "Rex", Arial, Helvetica, sans-serif;
   text-align: center; }
+  @media (min-width: 375px) {
+    .score__board {
+      padding: 0 40px; } }
 
 .score__value {
   color: #d6a354;
   font-size: 2.5rem; }
+  @media (min-width: 375px) {
+    .score__value {
+      font-size: 2.75rem; } }
   @media (min-width: 700px) {
     .score__value {
       font-size: 3rem; } }
@@ -973,6 +985,9 @@ body {
   font-size: 6rem;
   font-weight: 900;
   letter-spacing: 0.1em; }
+  @media (min-width: 375px) {
+    .score__main-value {
+      font-size: 8rem; } }
   @media (min-width: 700px) {
     .score__main-value {
       font-size: 10rem; } }
@@ -980,6 +995,9 @@ body {
 .score__main-desc {
   font-family: "Rex", Arial, Helvetica, sans-serif;
   font-size: 0.85rem; }
+  @media (min-width: 375px) {
+    .score__main-desc {
+      font-size: 1rem; } }
   @media (min-width: 700px) {
     .score__main-desc {
       font-size: 1.5rem; } }

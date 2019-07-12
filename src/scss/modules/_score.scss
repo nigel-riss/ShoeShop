@@ -12,6 +12,12 @@
     background-repeat: no-repeat;
     background-position: center bottom;
 
+    @include atMobile {
+        // box model
+        // border: 2px dashed fuchsia;
+        max-width: 330px;
+    }
+
     @include atTablet {
         // box model
         max-width: 460px;
@@ -26,17 +32,27 @@
     // box model
     display: flex;
     justify-content: space-between;
-    padding: 0 10px;
+    padding: 0 20px;
 
     // typography
     font-family: $titleFont;
     text-align: center;
+
+    @include atMobile {
+        // box model
+        padding: 0 40px;
+    }
 }
 
 .score__value {
     // typography
     color: $golden;
     font-size: 2.5rem;
+
+    @include atMobile {
+        // typography
+        font-size: 2.75rem;
+    }
 
     @include atTablet {
         // typography
@@ -73,6 +89,11 @@
     font-weight: 900;
     letter-spacing: 0.1em;
 
+    @include atMobile {
+        // typography
+        font-size: 8rem;
+    }
+
     @include atTablet {
         // typography
         font-size: 10rem;
@@ -83,6 +104,11 @@
     // typography
     font-family: $titleFont;
     font-size: 0.85rem;
+
+    @include atMobile {
+        // typography
+        font-size: 1rem;
+    }
 
     @include atTablet {
         // typography
