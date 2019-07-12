@@ -1017,92 +1017,6 @@ body {
 .sales-contact__name::before {
   content: "— "; }
 
-.indicator {
-  position: relative;
-  margin-bottom: 40px;
-  min-height: 70px;
-  padding-left: 80px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  text-transform: uppercase; }
-  @media (min-width: 700px) {
-    .indicator {
-      padding-left: 160px;
-      min-height: 120px; } }
-
-.indicator--card {
-  margin: 0;
-  padding: 20px;
-  text-align: center; }
-  .indicator--card .indicator__icon {
-    position: relative;
-    margin: 0 auto; }
-  .indicator--card .indicator__desc {
-    margin-bottom: 1rem; }
-
-.indicator__value {
-  color: #d6a354;
-  letter-spacing: 0.025em;
-  text-transform: none;
-  font-size: 2rem;
-  font-weight: 900; }
-  @media (min-width: 700px) {
-    .indicator__value {
-      font-size: 4rem; } }
-
-.indicator__value--small {
-  font-size: 1.5rem; }
-
-.indicator__value em {
-  font-size: 0.85rem;
-  font-style: normal;
-  text-transform: uppercase; }
-
-.indicator__value small {
-  display: inline-block;
-  margin-left: -0.25em;
-  font-size: 0.75em; }
-  @media (min-width: 700px) {
-    .indicator__value small {
-      margin-left: -0.5em;
-      font-size: 0.5em; } }
-
-.indicator__desc {
-  line-height: 1.5;
-  letter-spacing: 0.025em;
-  font-size: 0.8em;
-  font-weight: 700; }
-  @media (min-width: 700px) {
-    .indicator__desc {
-      font-size: 1em;
-      font-weight: 400; } }
-
-.indicator__desc em {
-  color: #d6a354;
-  font-style: normal; }
-
-.indicator__icon {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 60px;
-  width: 60px; }
-  @media (min-width: 700px) {
-    .indicator__icon {
-      height: 110px;
-      width: 110px; } }
-
-.indicator__icon svg {
-  fill: #a8acb9; }
-
-.indicator__note {
-  color: #a8acb9;
-  letter-spacing: 0.025em;
-  line-height: 1.5;
-  font-size: 0.8em;
-  font-weight: 700; }
-
 .card {
   margin-bottom: 40px;
   padding-top: 20px;
@@ -1208,6 +1122,92 @@ h3.featured-title {
   font-size: 0.85rem;
   font-weight: 600;
   text-transform: uppercase; }
+
+.indicator {
+  position: relative;
+  margin-bottom: 40px;
+  min-height: 70px;
+  padding-left: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-transform: uppercase; }
+  @media (min-width: 700px) {
+    .indicator {
+      padding-left: 160px;
+      min-height: 120px; } }
+
+.indicator--card {
+  margin: 0;
+  padding: 20px;
+  text-align: center; }
+  .indicator--card .indicator__icon {
+    position: relative;
+    margin: 0 auto; }
+  .indicator--card .indicator__desc {
+    margin-bottom: 1rem; }
+
+.indicator__value {
+  color: #d6a354;
+  letter-spacing: 0.025em;
+  text-transform: none;
+  font-size: 2rem;
+  font-weight: 900; }
+  @media (min-width: 700px) {
+    .indicator__value {
+      font-size: 4rem; } }
+
+.indicator__value--small {
+  font-size: 1.5rem; }
+
+.indicator__value em {
+  font-size: 0.85rem;
+  font-style: normal;
+  text-transform: uppercase; }
+
+.indicator__value small {
+  display: inline-block;
+  margin-left: -0.25em;
+  font-size: 0.75em; }
+  @media (min-width: 700px) {
+    .indicator__value small {
+      margin-left: -0.5em;
+      font-size: 0.5em; } }
+
+.indicator__desc {
+  line-height: 1.5;
+  letter-spacing: 0.025em;
+  font-size: 0.8em;
+  font-weight: 700; }
+  @media (min-width: 700px) {
+    .indicator__desc {
+      font-size: 1em;
+      font-weight: 400; } }
+
+.indicator__desc em {
+  color: #d6a354;
+  font-style: normal; }
+
+.indicator__icon {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 60px;
+  width: 60px; }
+  @media (min-width: 700px) {
+    .indicator__icon {
+      height: 110px;
+      width: 110px; } }
+
+.indicator__icon svg {
+  fill: #a8acb9; }
+
+.indicator__note {
+  color: #a8acb9;
+  letter-spacing: 0.025em;
+  line-height: 1.5;
+  font-size: 0.8em;
+  font-weight: 700; }
 
 .stage-list__content {
   position: relative;
