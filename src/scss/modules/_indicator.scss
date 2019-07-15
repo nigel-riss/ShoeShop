@@ -9,15 +9,20 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    // border: 2px dashed fuchsia;
 
     // typography
+    text-align: left;
     text-transform: uppercase;
 
     @include atTablet {
         // box model
-        padding-left: 160px;
-        min-height: 120px;
+        padding-left: 0;
+        align-items: center;
+        // padding-left: 160px;
+        // min-height: 120px;
+
+        // typography
+        text-align: center;
     }
 }
 
@@ -54,10 +59,10 @@
     font-size: 2rem;
     font-weight: 900;
 
-    @include atTablet {
-        // typography
-        font-size: 4rem;
-    }
+    // @include atTablet {
+    //     // typography
+    //     font-size: 4rem;
+    // }
 }
 
 .indicator__value--small {
@@ -80,13 +85,13 @@
     // typography
     font-size: 0.75em;
 
-    @include atTablet {
-        // box model
-        margin-left: -0.5em;
+    // @include atTablet {
+    //     // box model
+    //     margin-left: -0.5em;
 
-        // typography
-        font-size: 0.5em;
-    }
+    //     // typography
+    //     font-size: 0.5em;
+    // }
 }
 
 .indicator__desc {
@@ -96,11 +101,11 @@
     font-size: 0.8em;
     font-weight: 700;
 
-    @include atTablet {
-        // typography
-        font-size: 1em;
-        font-weight: 400;
-    }
+    // @include atTablet {
+    //     // typography
+    //     font-size: 1em;
+    //     font-weight: 400;
+    // }
 }
 
 .indicator__desc em {
@@ -120,11 +125,16 @@
     width: 60px;
 
     @include atTablet {
+        // positioning
+        position: relative;
+
         // box model
-        height: 110px;
-        width: 110px;
+        display: inline-block;
+        vertical-align: top;
+        margin-bottom: 10px;
+        // height: 110px;
+        // width: 110px;
     }
-    // border: 2px dashed fuchsia;
 }
 
 .indicator__icon svg {

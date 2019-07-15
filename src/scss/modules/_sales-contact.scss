@@ -10,11 +10,12 @@
     font-size: 1rem;
 }
 
-.sales-contact__title {
+h3.sales-contact__title {
     // box model
     margin: 0;
 
     // typography
+    text-align: left;
     font-size: 1em;
 
     @include atTablet {

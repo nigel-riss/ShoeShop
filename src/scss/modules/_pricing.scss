@@ -1,3 +1,41 @@
 .pricing {
+    @include atMobile {
+        // typography
+        text-align: center;
+    }
+}
 
+.pricing__lump-summ {
+    @include atTablet {
+        // box model
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.pricing__common {
+    // box model
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // justify-content: center;
+
+    @include atTablet {
+        // box model
+        flex-basis: calc(50% - 20px);
+        justify-content: space-around;
+        padding: 40px 0;
+    }
+}
+
+.pricing__additional {
+    @include atTablet {
+        // box model
+        flex-basis: calc(50% - 20px);
+    }
+}
+
+.pricing__contact {
+    // typography
+    text-align: center;
 }

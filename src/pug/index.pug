@@ -148,45 +148,48 @@ html(lang="en")
                 .section__content.section__content--bianca.pricing
                     p.section__shadow-text.shadow-text--dark $$$
 
-                    .content
+                    .content.pricing
                         h3 Паушуальный взнос:
 
-                        .pricing
-                        .indicator
-                            .indicator__value 500&nbsp;000&nbsp;<small>₽</small>
-                            .indicator__desc для городов с&nbsp;населением<br> <em>до 100 тыс. человек</em>
-                            .indicator__icon: img(src="./img/icons/building.svg", alt="")
+                        .pricing__lump-summ
+                            .pricing__common
+                                .indicator
+                                    .indicator__icon: img(src="./img/icons/building.svg", alt="")
+                                    .indicator__value 500&nbsp;000&nbsp;<small>₽</small>
+                                    .indicator__desc для городов с&nbsp;населением<br> <em>до 100 тыс. человек</em>
 
-                        .indicator
-                            .indicator__value 600&nbsp;000&nbsp;<small>₽</small>
-                            .indicator__desc для городов с&nbsp;населением<br> <em>до 1 млн. человек</em>
-                            .indicator__icon: img(src="./img/icons/skyline.svg", alt="")
+                                .indicator
+                                    .indicator__icon: img(src="./img/icons/skyline.svg", alt="")
+                                    .indicator__value 600&nbsp;000&nbsp;<small>₽</small>
+                                    .indicator__desc для городов с&nbsp;населением<br> <em>до 1 млн. человек</em>
 
-                        .indicator
-                            .indicator__value 800&nbsp;000&nbsp;<small>₽</small>
-                            .indicator__desc <em>для города-милионника</em>
-                            .indicator__icon: img(src="./img/icons/cityscape.svg", alt="")
+                                .indicator
+                                    .indicator__icon: img(src="./img/icons/cityscape.svg", alt="")
+                                    .indicator__value 800&nbsp;000&nbsp;<small>₽</small>
+                                    .indicator__desc <em>для города-милионника</em>
 
-                        .card
-                            .card__title Moscow
-                            .card__content
-                                .indicator.indicator--card
-                                    .indicator__value 1&nbsp;000&nbsp;000&nbsp;<small>₽</small>
-                                    .indicator__desc Для открытия барбершопа<br> <em>в&nbsp;Москве</em>
-                                    .indicator__icon: img(src="./img/icons/kremlin.svg", alt="")
+                            .pricing__additional
+                                .card
+                                    .card__title Moscow
+                                    .card__content
+                                        .indicator.indicator--card
+                                            .indicator__value 1&nbsp;000&nbsp;000&nbsp;<small>₽</small>
+                                            .indicator__desc Для открытия барбершопа<br> <em>в&nbsp;Москве</em>
+                                            .indicator__icon: img(src="./img/icons/kremlin.svg", alt="")
 
-                        .card
-                            .card__title Эксклюзив
-                            .card__content
-                                .indicator.indicator--card
-                                    .indicator__value +&nbsp;100&nbsp;000&nbsp;<small>₽</small>
-                                    .indicator__desc Приобритение <em>«Эксклюзива»</em> на&nbsp;город
-                                    .indicator__note Никто, кроме вас, не&nbsp;сможет открыть Oldboy в&nbsp;том&nbsp;же&nbsp;городе
+                                .card
+                                    .card__title Эксклюзив
+                                    .card__content
+                                        .indicator.indicator--card
+                                            .indicator__value +&nbsp;100&nbsp;000&nbsp;<small>₽</small>
+                                            .indicator__desc Приобритение <em>«Эксклюзива»</em> на&nbsp;город
+                                            .indicator__note Никто, кроме вас, не&nbsp;сможет открыть Oldboy в&nbsp;том&nbsp;же&nbsp;городе
 
-                    .sales-contact
-                        h3.sales-contact__title Отдел продаж франшизы Oldboy
-                        a.sales-contact__phone(href="tel:+79118660079") +7 (911) 866-00-79
-                        p.sales-contact__name Ирина
+                        .pricing__contact
+                            .sales-contact
+                                h3.sales-contact__title Отдел продаж франшизы Oldboy
+                                a.sales-contact__phone(href="tel:+79118660079") +7 (911) 866-00-79
+                                p.sales-contact__name Ирина
 
             section.section#advantages
                 .section__header

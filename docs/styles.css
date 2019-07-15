@@ -1007,11 +1007,12 @@ body {
   font-family: "Rex", Arial, Helvetica, sans-serif;
   font-size: 1rem; }
 
-.sales-contact__title {
+h3.sales-contact__title {
   margin: 0;
+  text-align: left;
   font-size: 1em; }
   @media (min-width: 700px) {
-    .sales-contact__title {
+    h3.sales-contact__title {
       font-size: 1em; } }
 
 .sales-contact__phone {
@@ -1038,6 +1039,7 @@ body {
   margin-bottom: 40px;
   padding-top: 20px;
   padding-bottom: 20px;
+  text-align: left;
   border: 1px solid rgba(214, 163, 84, 0.25);
   border-radius: 10px;
   background-color: #ffffff; }
@@ -1144,6 +1146,32 @@ h3.featured-title {
   font-weight: 600;
   text-transform: uppercase; }
 
+@media (min-width: 375px) {
+  .pricing {
+    text-align: center; } }
+
+@media (min-width: 700px) {
+  .pricing__lump-summ {
+    display: flex;
+    justify-content: space-between; } }
+
+.pricing__common {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  @media (min-width: 700px) {
+    .pricing__common {
+      flex-basis: calc(50% - 20px);
+      justify-content: space-around;
+      padding: 40px 0; } }
+
+@media (min-width: 700px) {
+  .pricing__additional {
+    flex-basis: calc(50% - 20px); } }
+
+.pricing__contact {
+  text-align: center; }
+
 .indicator {
   position: relative;
   margin-bottom: 40px;
@@ -1152,11 +1180,13 @@ h3.featured-title {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  text-align: left;
   text-transform: uppercase; }
   @media (min-width: 700px) {
     .indicator {
-      padding-left: 160px;
-      min-height: 120px; } }
+      padding-left: 0;
+      align-items: center;
+      text-align: center; } }
 
 .indicator--card {
   margin: 0;
@@ -1174,9 +1204,6 @@ h3.featured-title {
   text-transform: none;
   font-size: 2rem;
   font-weight: 900; }
-  @media (min-width: 700px) {
-    .indicator__value {
-      font-size: 4rem; } }
 
 .indicator__value--small {
   font-size: 1.5rem; }
@@ -1190,20 +1217,12 @@ h3.featured-title {
   display: inline-block;
   margin-left: -0.25em;
   font-size: 0.75em; }
-  @media (min-width: 700px) {
-    .indicator__value small {
-      margin-left: -0.5em;
-      font-size: 0.5em; } }
 
 .indicator__desc {
   line-height: 1.5;
   letter-spacing: 0.025em;
   font-size: 0.8em;
   font-weight: 700; }
-  @media (min-width: 700px) {
-    .indicator__desc {
-      font-size: 1em;
-      font-weight: 400; } }
 
 .indicator__desc em {
   color: #d6a354;
@@ -1217,8 +1236,10 @@ h3.featured-title {
   width: 60px; }
   @media (min-width: 700px) {
     .indicator__icon {
-      height: 110px;
-      width: 110px; } }
+      position: relative;
+      display: inline-block;
+      vertical-align: top;
+      margin-bottom: 10px; } }
 
 .indicator__icon svg {
   fill: #a8acb9; }
