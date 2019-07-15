@@ -1073,7 +1073,8 @@ h3.sales-contact__title {
       flex-wrap: wrap;
       justify-content: space-between;
       justify-content: space-around;
-      padding-top: 60px; } }
+      padding-top: 60px;
+      margin-bottom: -100px; } }
 
 .feature {
   position: relative;
