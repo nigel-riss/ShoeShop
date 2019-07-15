@@ -1113,6 +1113,10 @@ body {
   line-height: 1.5;
   transition: all 0.25s ease-out; }
 
+.carousel__image img {
+  height: 100%;
+  width: 100%; }
+
 h3.featured-title {
   color: #d6a354;
   font-family: "Rex", Arial, Helvetica, sans-serif;
