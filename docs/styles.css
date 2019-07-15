@@ -1060,6 +1060,21 @@ h3.sales-contact__title {
 .card__content {
   padding: 10px; }
 
+.advantages {
+  padding-top: 40px; }
+  @media (min-width: 375px) {
+    .advantages {
+      max-width: 320px;
+      margin: 0 auto; } }
+  @media (min-width: 700px) {
+    .advantages {
+      max-width: inherit;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      justify-content: space-around;
+      padding-top: 60px; } }
+
 .feature {
   position: relative;
   margin-bottom: 40px;
@@ -1067,11 +1082,14 @@ h3.sales-contact__title {
   transition: all 0.25s ease-out; }
   @media (min-width: 700px) {
     .feature {
+      flex-basis: 45%; } }
+  @media (min-width: 1000px) {
+    .feature {
       min-height: 300px;
       margin-bottom: 60px;
       padding: 30px; } }
 
-@media (min-width: 700px) {
+@media (min-width: 1000px) {
   .feature:hover {
     background-color: #333333; }
     .feature:hover .feature__icon {
@@ -1091,7 +1109,7 @@ h3.sales-contact__title {
   height: 60px;
   width: 60px;
   transition: all 0.15s ease-out; }
-  @media (min-width: 700px) {
+  @media (min-width: 1000px) {
     .feature__icon {
       position: relative;
       height: 130px;
@@ -1103,7 +1121,7 @@ h3.sales-contact__title {
 .feature__icon svg {
   fill: #a8acb9;
   transition: all 0.25s ease-out; }
-  @media (min-width: 700px) {
+  @media (min-width: 1000px) {
     .feature__icon svg {
       position: absolute;
       left: 10px;
@@ -1120,7 +1138,7 @@ h3.sales-contact__title {
   font-size: 1.25rem;
   line-height: 1.25;
   transition: all 0.25s ease-out; }
-  @media (min-width: 700px) {
+  @media (min-width: 1000px) {
     .feature__title {
       font-size: 3rem; } }
 
@@ -1164,6 +1182,11 @@ h3.featured-title {
       flex-basis: calc(50% - 20px);
       justify-content: space-around;
       padding: 40px 0; } }
+
+@media (min-width: 375px) {
+  .pricing__additional {
+    max-width: 320px;
+    margin: 0 auto; } }
 
 @media (min-width: 700px) {
   .pricing__additional {

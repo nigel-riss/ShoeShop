@@ -29,6 +29,12 @@
 }
 
 .pricing__additional {
+    @include atMobile {
+        // box model
+        max-width: 320px;
+        margin: 0 auto;
+    }
+
     @include atTablet {
         // box model
         flex-basis: calc(50% - 20px);
