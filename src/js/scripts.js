@@ -7,7 +7,7 @@ import slick from 'slick-carousel';
 const mobileMenu = new MobileMenu();
 
 const slickConfig = {
-
+  dots: true,
 };
 
 $('.numbers__scoreboard').slick(slickConfig);
