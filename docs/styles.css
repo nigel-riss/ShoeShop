@@ -1154,9 +1154,32 @@ h3.sales-contact__title {
 .approach {
   padding-top: 20px; }
 
-.carousel__image img {
+.approach-album {
+  max-width: 500px;
+  margin: 0 auto; }
+
+.approach-album__main {
+  margin-bottom: 20px; }
+
+.approach-album__image {
+  height: 270px;
+  border-radius: 5px;
+  overflow: hidden; }
+
+.approach-album__image img {
   height: 100%;
-  width: 100%; }
+  width: 100%;
+  object-fit: cover; }
+
+.approach-album__thumbs {
+  height: 50px;
+  max-width: 50px;
+  margin-right: 10px;
+  border-radius: 5px;
+  overflow: hidden; }
+
+.approach-album__thumbs img {
+  height: 100%; }
 
 h3.featured-title {
   margin: 0;

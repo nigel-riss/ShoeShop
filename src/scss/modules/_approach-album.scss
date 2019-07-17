@@ -1,0 +1,49 @@
+.approach-album {
+    // box model
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.approach-album__main {
+    // box model
+    margin-bottom: 20px;
+}
+
+.approach-album__image {
+    // box model
+    height: 270px;
+    
+    // visual
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.approach-album__image img {
+    // box model
+    height: 100%;
+    width: 100%;
+
+    // visual
+    object-fit: cover;
+}
+
+.approach-album__nav {
+    // box model
+
+}
+
+.approach-album__thumbs {
+    // box model
+    height: 50px;
+    max-width: 50px;
+    margin-right: 10px;
+    
+    // visual
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.approach-album__thumbs img {
+    // box model
+    height: 100%;
+}
