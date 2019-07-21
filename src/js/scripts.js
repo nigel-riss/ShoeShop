@@ -13,23 +13,26 @@ const slickConfig = {
 const slickConfig2 = {
   slidesToShow: 1,
   slidesToScroll: 1,
-  arrows: true,
+  arrows: false,
   fade: true,
-  asNavFor: '.carousel__nav'
+  asNavFor: '.approach-album__nav'
 };
 
 const slickConfig3 = {
   slidesToShow: 3,
   slidesToScroll: 1,
-  asNavFor: '.carousel__main',
+  asNavFor: '.approach-album__main',
+  arrows: false,
   dots: true,
   centerMode: true,
-  focusOnSelect: true
+  focusOnSelect: true,
+  variableWidth: true
+  //slide: '.approach-album__thumbs'
 };
 
 $('.numbers__scoreboard').slick(slickConfig);
 
-$('.carousel__main').slick(slickConfig2);
+$('.approach-album__main').slick(slickConfig2);
 
-$('.carousel__nav').slick(slickConfig3);
+$('.approach-album__nav').slick(slickConfig3);
 
