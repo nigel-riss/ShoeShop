@@ -1,21 +1,21 @@
 {
-  "name": "oldboy-landing",
+  "name": "shoeshop",
   "version": "1.0.0",
-  "description": "Landing page for Oldboy Franchise",
+  "description": "Landing page for ShoeShop",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/drsg85/oldboy-landing.git"
+    "url": "git+https://github.com/drsg85/ShoeShop.git"
   },
-  "author": "Oldboy Team",
+  "author": "RB",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/drsg85/oldboy-landing/issues"
+    "url": "https://github.com/drsg85/ShoeShop/issues"
   },
-  "homepage": "https://github.com/drsg85/oldboy-landing#readme",
+  "homepage": "https://github.com/drsg85/ShoeShop#readme",
   "devDependencies": {
     "browser-sync": "^2.26.7",
     "gulp": "^4.0.2",
