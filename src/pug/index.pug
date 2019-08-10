@@ -6,3 +6,177 @@ html(lang="en")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         title ShoeShop
     body
+        header.header
+            .header__top
+                .header__logo: img(src="", alt="")
+
+                .header__menu.header__menu--hidden
+                    nav.main-nav
+                        ul.main-nav__list
+                            li.main-nav__item: a(href="#").main-nav__link Главная
+                            li.main-nav__item: a(href="#history").main-nav__link О нас
+                            li.main-nav__item: a(href="#pricing").main-nav__link Стоимость
+                            li.main-nav__item: a(href="#advantages").main-nav__link Преимущества
+                            li.main-nav__item: a(href="#statistics").main-nav__link Статистика
+
+                .menu-button.menu-button--close
+                    .menu-button__middle
+
+            .header__content
+                .header__image: img(src="", alt="")
+
+                .header__caption
+                    .header-caption
+                        h1.header-caption__title Nike
+                        p.header-caption__text Shop by brands
+
+                aside.header__aside
+                    .header-aside
+                        .header-aside__left
+                            p.header-aside__text Nike, originally known as Blue Ribbon Sports was founded by University of Oregon track athlete Phil Knight.
+                        
+                        .header-aside__right
+                            ul.socials
+                                li.socials__item
+                                    a(href="").socials__icon.socials__icon--twitter
+                                li.socials__item
+                                    a(href="").socials__icon.socials__icon--facebook
+                                li.socials__item
+                                    a(href="").socials__icon.socials__icon--google
+                                li.socials__item
+                                    a(href="").socials__icon.socials__icon--inst
+
+        main
+            section.flagship
+                .flagship__image: img(src="", alt="")
+
+                .flagship__content
+                    .flagship__header
+                        header.shoeshop-header
+                            h2.shoeshop-header__title Nike Air Force One MID id
+                            p.shoeshop-header__text Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward
+
+                    .flagship__button
+                        button.button
+                            a(href="")
+
+            section.arrivals
+                .arrivals__header
+                    header.shoeshop-header
+                        h2.shoeshop-header__title Popular Arrivals
+
+                .arrivals__content
+                    .arrivals__items
+                        .arrivals-item
+                            .arrivals-item__image: img(src="", alt="")
+                            .arrival-item__text
+                                p.arrival-item__name Nike shoes
+                                p.arrival-item__desc Shop outdoors
+                                p.arrival-item__price $ 125
+
+                        .arrivals-item
+                            .arrivals-item__image: img(src="", alt="")
+                            .arrival-item__text
+                                p.arrival-item__name Nike shoes
+                                p.arrival-item__desc Shop outdoors
+                                p.arrival-item__price $ 260
+
+                        .arrivals-item
+                            .arrivals-item__image: img(src="", alt="")
+                            .arrival-item__text
+                                p.arrival-item__name Nike shoes
+                                p.arrival-item__desc Shop outdoors
+                                p.arrival-item__price $ 145
+
+                        .arrivals-item
+                            .arrivals-item__image: img(src="", alt="")
+                            .arrival-item__text
+                                p.arrival-item__name Nike shoes
+                                p.arrival-item__desc Shop outdoors
+                                p.arrival-item__price $ 350
+
+            section.collections
+                .collections__content
+                    .collection__header
+                        header.shoeshop-header
+                            h2.shoeshop-header__title Pre- Fall Collections
+                            p.shoeshop-header__text Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will
+
+                        .collection__button
+                            button.button
+                                a(href="")
+
+                    .collection__image: img(src="", alt="")
+
+            section.quotes
+                .quotes__header
+                    header.shoeshop-header
+                        h2.shoeshop-header__title We Thought of you
+                        p.shoeshop-header__text Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.
+
+                    p.quotes__name Nandy Sweety
+                    p.quotes__position Ui Designer
+
+                .quotes-arrow
+                    .quotes-arrow__left
+                    .quotes-arrow__right
+
+            section.blog
+                .blog__header
+                    header.shoeshop-header
+                        h2.shoeshop-header__title Latest Blog
+
+                .blog__content
+                    .blog__image: img(src="", alt="")
+
+                    .blog__descripton
+                        h3.blog__title Colourful Offer ;
+                        p.shoeshop-header__text Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive 
+
+                        .blog__button
+                            button.button
+                                a(href="")
+
+        footer.footer
+            .footer__content
+                .footer__logo: img(src="", alt="")
+
+                ul.footer-menu
+                    li.footer-menu__item
+                        a.footer-menu__link(href="") Home
+                    li.footer-menu__item
+                        a.footer-menu__link(href="") Man
+                    li.footer-menu__item
+                        a.footer-menu__link(href="") Woman
+                    li.footer-menu__item
+                        a.footer-menu__link(href="") Popular
+                    li.footer-menu__item
+                        a.footer-menu__link(href="") About
+                    li.footer-menu__item
+                        a.footer-menu__link(href="") Blog
+
+                ul.footer-menu
+                    li.footer-menu__item
+                        a.footer-menu__link(href="") Support
+                    li.footer-menu__item
+                        a.footer-menu__link(href="") Advertisement
+                    li.footer-menu__item
+                        a.footer-menu__link(href="") Online Shop
+
+                .footer__form-n-socials
+                    .footer-form
+                        .footer-form__legend
+                        p.footer-form__cta Sign up for news and events
+                    
+                    .footer__socials
+                        ul.socials.socials--footer
+                            li.socials__item
+                                a(href="").socials__icon.socials__icon--twitter
+                            li.socials__item
+                                a(href="").socials__icon.socials__icon--facebook
+                            li.socials__item
+                                a(href="").socials__icon.socials__icon--google
+                            li.socials__item
+                                a(href="").socials__icon.socials__icon--inst
+
+            a.footer__contact(href="") Contact us
