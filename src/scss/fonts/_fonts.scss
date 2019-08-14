@@ -1,39 +1,63 @@
 @font-face {
-    font-family: 'Montserrat';
-    src: url('./fonts/subset-Montserrat-Black.woff2') format('woff2'),
-        url('./fonts/subset-Montserrat-Black.woff') format('woff');
-    font-weight: 900;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Montserrat';
-    src: url('./fonts/subset-Montserrat-SemiBold.woff2') format('woff2'),
-        url('./fonts/subset-Montserrat-SemiBold.woff') format('woff');
+    font-family: 'CormorantGaramond';
+    src: url('./fonts/subset-CormorantGaramond-Bold.woff2') format('woff2'),
+        url('./fonts/subset-CormorantGaramond-Bold.woff') format('woff');
     font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Montserrat';
+    font-family: 'CormorantGaramond';
+    src: url('./fonts/subset-CormorantGaramond-Medium.woff2') format('woff2'),
+        url('./fonts/subset-CormorantGaramond-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('./fonts/subset-Poppins-Light.woff2') format('woff2'),
+        url('./fonts/subset-Poppins-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('./fonts/subset-Poppins-Medium.woff2') format('woff2'),
+        url('./fonts/subset-Poppins-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
     src: url('./fonts/subset-Montserrat-Regular.woff2') format('woff2'),
-        url('./fonts/subset-Montserrat-Regular.woff') format('woff');
+        url('./fonts/subset-Poppins-Regular.woff') format('woff');
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Rex';
-    src: url('./fonts/Rex-Bold.woff2') format('woff2'),
-        url('./fonts/Rex-Bold.woff') format('woff');
+    font-family: 'Roboto';
+    src: url('./fonts/subset-Roboto-Bold.woff2') format('woff2'),
+        url('./fonts/subset-Roboto-Bold.woff') format('woff');
     font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Rex Bold Inline';
-    src: url('./fonts/subset-RexBoldInline.woff2') format('woff2'),
-        url('./fonts/subset-RexBoldInline.woff') format('woff');
-    font-weight: 700;
+    font-family: 'Roboto';
+    src: url('./fonts/subset-Roboto-Regular.woff2') format('woff2'),
+        url('./fonts/subset-Roboto-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('./fonts/subset-Ubuntu-Medium.woff2') format('woff2'),
+        url('./fonts/subset-Ubuntu-Medium.woff') format('woff');
+    font-weight: 500;
     font-style: normal;
 }

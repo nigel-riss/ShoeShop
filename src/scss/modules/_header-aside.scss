@@ -1,0 +1,20 @@
+.header-aside {
+    // box model
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-aside__text {
+    // box model
+    max-width: 265px;
+
+    // typography
+    color: $silver;
+    font-family: $mainFont;
+    font-size: 0.75rem;
+    font-weight: 400;
+
+    // visual
+    // transform: rotate(-90deg);
+    // transform-origin: left top 0;
+}

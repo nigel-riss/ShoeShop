@@ -5,10 +5,11 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         title ShoeShop
+        link(rel="stylesheet", href="./styles.css")
     body
         header.header
             .header__top
-                .header__logo: img(src="", alt="")
+                p.header__logo ShoeShop
 
                 .header__menu.header__menu--hidden
                     nav.main-nav
@@ -28,7 +29,8 @@ html(lang="en")
                 .header__caption
                     .header-caption
                         h1.header-caption__title Nike
-                        p.header-caption__text Shop by brands
+                        button.button.button--main
+                            a(href="") Shop by brands
 
                 aside.header__aside
                     .header-aside

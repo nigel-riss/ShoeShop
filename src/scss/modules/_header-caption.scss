@@ -1,0 +1,14 @@
+.header-caption {
+    // box model
+    padding-left: 100px;
+}
+
+.header-caption__title {
+    // box model
+    margin: 0;
+
+    // typography
+    font-family: $roboto;
+    font-size: 9rem;
+    font-weight: 700;
+}

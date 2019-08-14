@@ -1,0 +1,38 @@
+.header {
+    // visual
+    background: rgb(232,232,232);
+    background: linear-gradient(75deg, rgba(232,232,232,1) 50%, rgba(130,244,211,1) 50%);
+}
+
+.header__top {
+    // box model
+    padding: 70px 215px;
+    padding-bottom: 0;
+
+    // visual
+}
+
+.header__logo {
+    // box model
+    margin: 0;
+
+    // typography
+    color: $spray;
+    font-family: $logoFont;
+    font-size: 1.5rem;
+}
+
+.header__menu {
+    // box model
+    display: none;
+}
+
+.header__content {
+    // box model
+    padding-left: 120px;
+    padding-right: 40px;
+}
+
+.header__aside {
+    
+}

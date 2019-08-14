@@ -1,0 +1,24 @@
+.button {
+    &--main {
+        // box model
+        padding: 20px 25px;
+        margin-left: 55px;
+
+        // visual
+        background-color: $spray;
+        border: none;
+    }
+}
+
+.button a {
+    // box model
+
+    // typography
+    color: $shark;
+    font-family: $mainFont;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    // visual
+    text-decoration: none;
+}

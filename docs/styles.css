@@ -145,8 +145,8 @@ template {
   display: none; }
 
 html {
-  color: #4f5362;
-  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  color: black;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-size: 14px; }
   @media (min-width: 1200px) {
     html {
@@ -162,31 +162,103 @@ body {
   box-sizing: border-box; }
 
 @font-face {
-  font-family: 'Montserrat';
-  src: url("./fonts/subset-Montserrat-Black.woff2") format("woff2"), url("./fonts/subset-Montserrat-Black.woff") format("woff");
-  font-weight: 900;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Montserrat';
-  src: url("./fonts/subset-Montserrat-SemiBold.woff2") format("woff2"), url("./fonts/subset-Montserrat-SemiBold.woff") format("woff");
+  font-family: 'CormorantGaramond';
+  src: url("./fonts/subset-CormorantGaramond-Bold.woff2") format("woff2"), url("./fonts/subset-CormorantGaramond-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal; }
 
 @font-face {
-  font-family: 'Montserrat';
-  src: url("./fonts/subset-Montserrat-Regular.woff2") format("woff2"), url("./fonts/subset-Montserrat-Regular.woff") format("woff");
+  font-family: 'CormorantGaramond';
+  src: url("./fonts/subset-CormorantGaramond-Medium.woff2") format("woff2"), url("./fonts/subset-CormorantGaramond-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Poppins';
+  src: url("./fonts/subset-Poppins-Light.woff2") format("woff2"), url("./fonts/subset-Poppins-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Poppins';
+  src: url("./fonts/subset-Poppins-Medium.woff2") format("woff2"), url("./fonts/subset-Poppins-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Poppins';
+  src: url("./fonts/subset-Montserrat-Regular.woff2") format("woff2"), url("./fonts/subset-Poppins-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal; }
 
 @font-face {
-  font-family: 'Rex';
-  src: url("./fonts/Rex-Bold.woff2") format("woff2"), url("./fonts/Rex-Bold.woff") format("woff");
+  font-family: 'Roboto';
+  src: url("./fonts/subset-Roboto-Bold.woff2") format("woff2"), url("./fonts/subset-Roboto-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal; }
 
 @font-face {
-  font-family: 'Rex Bold Inline';
-  src: url("./fonts/subset-RexBoldInline.woff2") format("woff2"), url("./fonts/subset-RexBoldInline.woff") format("woff");
-  font-weight: 700;
+  font-family: 'Roboto';
+  src: url("./fonts/subset-Roboto-Regular.woff2") format("woff2"), url("./fonts/subset-Roboto-Regular.woff") format("woff");
+  font-weight: 400;
   font-style: normal; }
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url("./fonts/subset-Ubuntu-Medium.woff2") format("woff2"), url("./fonts/subset-Ubuntu-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal; }
+
+.header {
+  background: #e8e8e8;
+  background: linear-gradient(75deg, #e8e8e8 50%, #82f4d3 50%); }
+
+.header__top {
+  padding: 70px 215px;
+  padding-bottom: 0; }
+
+.header__logo {
+  margin: 0;
+  color: #82f4d3;
+  font-family: "Ubuntu", Arial, Helvetica, sans-serif;
+  font-size: 1.5rem; }
+
+.header__menu {
+  display: none; }
+
+.header__content {
+  padding-left: 120px;
+  padding-right: 40px; }
+
+.header-caption {
+  padding-left: 100px; }
+
+.header-caption__title {
+  margin: 0;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-size: 9rem;
+  font-weight: 700; }
+
+.button--main {
+  padding: 20px 25px;
+  margin-left: 55px;
+  background-color: #82f4d3;
+  border: none; }
+
+.button a {
+  color: #2d2d30;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none; }
+
+.header-aside {
+  display: flex;
+  justify-content: space-between; }
+
+.header-aside__text {
+  max-width: 265px;
+  color: #afafaf;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 400; }
