@@ -6,7 +6,7 @@
 
 .header-aside__text {
     // box model
-    max-width: 265px;
+    max-height: 265px;
 
     // typography
     color: $silver;
@@ -15,6 +15,6 @@
     font-weight: 400;
 
     // visual
-    // transform: rotate(-90deg);
-    // transform-origin: left top 0;
+    transform: rotate(180deg);
+    writing-mode: tb-rl;
 }

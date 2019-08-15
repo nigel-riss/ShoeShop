@@ -210,12 +210,12 @@ body {
   font-style: normal; }
 
 .header {
+  padding-bottom: 90px;
+  padding-left: 120px;
+  padding-right: 45px;
+  padding-top: 60px;
   background: #e8e8e8;
   background: linear-gradient(75deg, #e8e8e8 50%, #82f4d3 50%); }
-
-.header__top {
-  padding: 70px 215px;
-  padding-bottom: 0; }
 
 .header__logo {
   margin: 0;
@@ -227,8 +227,16 @@ body {
   display: none; }
 
 .header__content {
-  padding-left: 120px;
-  padding-right: 40px; }
+  position: relative; }
+
+.header__image {
+  position: absolute;
+  left: 50%;
+  margin-left: -20%; }
+
+.header__image img {
+  max-width: 100%;
+  max-height: 60vh; }
 
 .header-caption {
   padding-left: 100px; }
@@ -257,8 +265,10 @@ body {
   justify-content: space-between; }
 
 .header-aside__text {
-  max-width: 265px;
+  max-height: 265px;
   color: #afafaf;
   font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-size: 0.75rem;
-  font-weight: 400; }
+  font-weight: 400;
+  transform: rotate(180deg);
+  writing-mode: tb-rl; }

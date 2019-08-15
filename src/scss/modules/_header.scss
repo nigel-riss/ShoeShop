@@ -1,4 +1,10 @@
 .header {
+    // box model
+    padding-bottom: 90px;
+    padding-left: 120px;
+    padding-right: 45px;
+    padding-top: 60px;
+
     // visual
     background: rgb(232,232,232);
     background: linear-gradient(75deg, rgba(232,232,232,1) 50%, rgba(130,244,211,1) 50%);
@@ -6,10 +12,8 @@
 
 .header__top {
     // box model
-    padding: 70px 215px;
-    padding-bottom: 0;
-
-    // visual
+    // padding: 70px 215px;
+    // padding-bottom: 0;
 }
 
 .header__logo {
@@ -28,9 +32,27 @@
 }
 
 .header__content {
+    // positioning
+    position: relative;
+
     // box model
-    padding-left: 120px;
-    padding-right: 40px;
+    // padding-left: 120px;
+    // padding-right: 40px;
+}
+
+.header__image {
+    // positioning
+    position: absolute;
+
+    // box model
+    left: 50%;
+    margin-left: -20%;
+}
+
+.header__image img {
+    // box model
+    max-width: 100%;
+    max-height: 60vh;
 }
 
 .header__aside {
