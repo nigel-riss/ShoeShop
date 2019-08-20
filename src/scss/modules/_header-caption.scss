@@ -12,3 +12,11 @@
     font-size: 9rem;
     font-weight: 700;
 }
+
+.header-caption__button {
+    position: relative;
+    z-index: 9;
+    
+    // box model
+    padding-left: 130px;
+}

@@ -1,23 +1,36 @@
 .button {
-    &--main {
-        // box model
-        padding: 20px 25px;
-        margin-left: 55px;
+    // box model
+    display: inline-block;
+    vertical-align: top;
+    min-width: 150px;
+    margin-bottom: 20px;
+    padding: 0 20px;
 
-        // visual
-        background-color: $spray;
-        border: none;
-    }
+    // typography
+    color: $black;
+    font-family: $mainFont;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.065rem;
+    line-height: 34px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    // visual
+    background-color: $spray;
+    border: 2px solid $spray;
+    transition: all 0.25s ease-out;
 }
 
 .button a {
     // box model
 
     // typography
-    color: $shark;
-    font-family: $mainFont;
-    font-weight: 700;
-    text-transform: uppercase;
+    // color: $shark;
+    // font-family: $mainFont;
+    // font-weight: 700;
+    // text-transform: uppercase;
 
     // visual
     text-decoration: none;

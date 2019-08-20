@@ -1,4 +1,55 @@
 .flagship {
+    // box model
+    display: flex;
+    padding-top: 100px;
+    padding-left: 120px;
+}
+
+.flagship__wrapper {
+    // box model
+    padding: 10px;
+
     // visual
-    
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 20px -10px rgba(0,0,0,0.75);
+}
+
+.flagship__image {
+    // box model
+    padding: 0 70px;
+
+    // visual
+    background-color: #eeeded;
+}
+
+.flagship_image img {
+    // box model
+    height: 100%;
+    width: 100%;
+}
+
+.flagship__content {
+    // positioning
+    position: relative;
+
+    // box model
+    width: 100%;
+}
+
+.flagship__header {
+    // box model
+    max-width: 625px;
+
+    // positioning
+    position: absolute;
+    top: 40%;
+    left: -5rem;
+}
+
+.flagship__button {
+    // box model
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: -65px;
 }

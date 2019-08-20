@@ -1,0 +1,26 @@
+.shoeshop-header {
+    // box model
+}
+
+.shoeshop-header__title {
+    // box model
+    margin: 0;
+    margin-bottom: 30px;
+
+    // typography
+    color: $black;
+    font-family: $titleFont;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.shoeshop-header__text {
+    // box model
+    margin: 0;
+
+    // typography
+    font-family: $mainFont;
+    color: $silver;
+    font-size: 0.85rem;
+    line-height: 1.5;
+}

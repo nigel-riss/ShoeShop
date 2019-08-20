@@ -26,6 +26,11 @@
     font-size: 1.5rem;
 }
 
+.header__logo span {
+    // typography
+    color: $black;
+}
+
 .header__menu {
     // box model
     display: none;

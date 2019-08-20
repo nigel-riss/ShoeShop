@@ -18,3 +18,10 @@
     transform: rotate(180deg);
     writing-mode: tb-rl;
 }
+
+.header-aside__right {
+    // box model
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}

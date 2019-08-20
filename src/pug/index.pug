@@ -9,7 +9,7 @@ html(lang="en")
     body
         header.header
             .header__top
-                p.header__logo ShoeShop
+                p.header__logo Sho<span>e</span> Shop
 
                 .header__menu.header__menu--hidden
                     nav.main-nav
@@ -29,8 +29,8 @@ html(lang="en")
                 .header__caption
                     .header-caption
                         h1.header-caption__title Nike
-                        button.button.button--main
-                            a(href="") Shop by brands
+                        .header-caption__button
+                            a(href="#").button Shop by brands
 
                 aside.header__aside
                     .header-aside
@@ -50,7 +50,8 @@ html(lang="en")
 
         main
             section.flagship
-                .flagship__image: img(src="", alt="")
+                .flagship__wrapper
+                    .flagship__image: img(src="./img/flagship.jpg", alt="")
 
                 .flagship__content
                     .flagship__header
@@ -58,9 +59,8 @@ html(lang="en")
                             h2.shoeshop-header__title Nike Air Force One MID id
                             p.shoeshop-header__text Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward
 
-                    .flagship__button
-                        button.button
-                            a(href="")
+                        .flagship__button
+                            a(href="#").button View Now
 
             section.arrivals
                 .arrivals__header
