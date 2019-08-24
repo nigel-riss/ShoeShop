@@ -210,6 +210,7 @@ body {
   font-style: normal; }
 
 .header {
+  margin-bottom: 100px;
   padding-bottom: 90px;
   padding-left: 120px;
   padding-right: 45px;
@@ -245,8 +246,9 @@ body {
 
 .flagship {
   display: flex;
-  padding-top: 100px;
-  padding-left: 120px; }
+  margin-bottom: 100px;
+  padding-left: 120px;
+  padding-right: 215px; }
 
 .flagship__wrapper {
   padding: 10px;
@@ -345,3 +347,40 @@ body {
   color: #afafaf;
   font-size: 0.85rem;
   line-height: 1.5; }
+
+.arrivals {
+  padding: 0 215px; }
+
+.arrivals__items {
+  display: flex;
+  justify-content: space-between; }
+
+.arrivals-item__image {
+  display: inline-block;
+  width: 250px;
+  height: 305px;
+  margin-bottom: 60px;
+  text-align: center;
+  background-color: #eeeded; }
+
+.arrivals-item__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; }
+
+.arrivals-item__name {
+  margin: 0;
+  margin-bottom: 25px;
+  color: #000000;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-weight: 500; }
+
+.arrivals-item__name span {
+  color: #afafaf; }
+
+.arrivals-item__price {
+  margin: 0;
+  color: #afafaf;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600; }
