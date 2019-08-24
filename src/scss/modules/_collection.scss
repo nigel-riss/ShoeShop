@@ -5,11 +5,14 @@
 }
 
 .collection__content {
-
+    // box model
+    display: flex;
 }
 
 .collection__header {
-
+    // box model
+    max-width: 550px;
+    padding-top: 155px;
 }
 
 .collection__button {

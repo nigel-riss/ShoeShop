@@ -389,3 +389,10 @@ body {
 .collection {
   margin-bottom: 100px;
   padding: 0 215px; }
+
+.collection__content {
+  display: flex; }
+
+.collection__header {
+  max-width: 550px;
+  padding-top: 155px; }
