@@ -396,3 +396,11 @@ body {
 .collection__header {
   max-width: 550px;
   padding-top: 155px; }
+
+.collection__wrapper {
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 20px -10px rgba(0, 0, 0, 0.75); }
+
+.collection__image {
+  background-color: #fde7ed; }
