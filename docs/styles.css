@@ -277,7 +277,8 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  margin-right: -65px; }
+  margin-right: -65px;
+  margin-top: 50px; }
 
 .header-caption {
   padding-left: 100px; }
@@ -391,11 +392,15 @@ body {
   padding: 0 215px; }
 
 .collection__content {
-  display: flex; }
+  display: flex;
+  justify-content: space-between; }
 
 .collection__header {
   max-width: 550px;
   padding-top: 155px; }
+
+.collection__button {
+  margin-top: 50px; }
 
 .collection__wrapper {
   padding: 10px;
