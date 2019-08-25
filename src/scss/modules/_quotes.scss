@@ -1,0 +1,25 @@
+.quotes {
+    // positioning
+    position: relative;
+
+    // box model
+    margin-bottom: 100px;
+    padding: 80px 0;
+
+    // visual
+    background-color: #f8f8f8;
+}
+
+.quotes__items {
+
+}
+
+.quotes__prev {
+    // positioning
+    position: absolute;
+}
+
+.quotes__next {
+    // positioning
+    position: absolute;
+}

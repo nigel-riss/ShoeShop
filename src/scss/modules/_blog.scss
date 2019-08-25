@@ -1,0 +1,44 @@
+.blog {
+    // box model
+    margin-bottom: 100px;
+    padding: 0 215px;
+}
+
+.blog__header {
+    // box model
+    margin-bottom: 85px;
+
+    // typography
+    text-align: center;
+}
+
+.blog__content {
+    // box model
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog__image {
+
+}
+
+.blog__image img {
+
+}
+
+.blog__descripton {
+    // box model
+    max-width: 525px;
+}
+
+.blog__title {
+
+}
+
+.blog__button {
+    // box model
+    margin-top: 65px;
+
+    // typography
+    text-align: right;
+}

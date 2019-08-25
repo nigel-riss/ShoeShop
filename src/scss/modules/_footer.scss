@@ -1,0 +1,42 @@
+.footer {
+    // box model
+    padding: 0 215px;
+}
+
+.footer__content {
+    // box model
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+
+    // visual
+    border-top: 1px solid $silver;
+    border-bottom: 1px solid $silver;
+}
+
+.footer__logo {
+
+}
+
+.footer__form-n-socials {
+
+}
+
+.footer__socials {
+    
+}
+
+.footer__contact {
+    // box model
+    display: block;
+    margin: 50px 0;
+
+    // typography
+    color: $silver;
+    text-align: right;
+    text-decoration: none;
+}
+
+.footer__socials {
+
+}

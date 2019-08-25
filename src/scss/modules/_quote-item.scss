@@ -1,0 +1,46 @@
+.quote-item {
+    // box model
+    max-width: 840px;
+    margin: 0 auto;
+
+    // typography
+    text-align: center;
+}
+
+.quote-item__title {
+    // box model
+    margin: 0;
+    margin-bottom: 30px;
+
+    // typography
+    color: $black;
+    font-family: $titleFont;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.quote-item__text {
+    // box model
+    margin: 0;
+    margin-bottom: 35px;
+
+    // typography
+    font-family: $mainFont;
+    color: $silver;
+    font-size: 0.85rem;
+    line-height: 1.5;
+}
+
+.quote-item__author {
+    // box model
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.quote-item__position {
+    // box model
+    margin: 0;
+
+    // typography
+    color: $spray;
+}

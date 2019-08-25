@@ -21,17 +21,14 @@
     background-color: $spray;
     border: 2px solid $spray;
     transition: all 0.25s ease-out;
+
+    &--form {
+        // typography
+        line-height: 46px;
+    }
 }
 
 .button a {
-    // box model
-
-    // typography
-    // color: $shark;
-    // font-family: $mainFont;
-    // font-weight: 700;
-    // text-transform: uppercase;
-
     // visual
     text-decoration: none;
 }

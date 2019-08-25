@@ -1,0 +1,15 @@
+.logo {
+    // box model
+    margin: 0;
+
+    // typography
+    color: $spray;
+    font-family: $logoFont;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.logo span {
+    // typography
+    color: $black;
+}

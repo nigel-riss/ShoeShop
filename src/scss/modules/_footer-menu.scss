@@ -1,0 +1,24 @@
+.footer-menu {
+    // box model
+    margin: 0;
+}
+
+.footer-menu__item {
+    // box model
+    margin-bottom: 15px;
+
+    // visual
+    list-style-type: none;
+}
+
+.footer-menu__link {
+    // box model
+    margin: 0;
+
+    // typography
+    color: $silver;
+    font-family: $mainFont;
+
+    // visual
+    text-decoration: none;
+}

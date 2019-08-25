@@ -1,0 +1,45 @@
+.form {
+
+}
+
+.form__legend {
+
+}
+
+.form__cta {
+    // box model
+    margin: 0;
+    margin-bottom: 30px;
+
+    // typography
+    color: $silver;
+    font-family: $mainFont;
+}
+
+.form__wrapper {
+    // box model
+    display: flex;
+}
+
+.form__input-group {
+
+}
+
+.form__input {
+    // box model
+    height: 50px;
+    max-width: 300px;
+    margin-right: 10px;
+
+    // typography
+    text-align: center;
+}
+
+.form__submit-btn {
+    // box model
+    display: block;
+    width: 100%;
+
+    // visual
+    cursor: pointer;
+}
