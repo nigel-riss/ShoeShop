@@ -1,4 +1,7 @@
 .logo {
+    // positioning
+    position: relative;
+
     // box model
     margin: 0;
 
@@ -12,4 +15,22 @@
 .logo span {
     // typography
     color: $black;
+}
+
+.logo::before {
+    content: '';
+    // positioning
+    position: absolute;
+    left: 0;
+    top: -6px;
+    transform: translateX(-110%);
+
+    // box model
+    display: block;
+    width: 40px;
+    height: 40px;
+
+    // visual
+    background-image: url('./img/logo.svg');
+    background-repeat: no-repeat;
 }

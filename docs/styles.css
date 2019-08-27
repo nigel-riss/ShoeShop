@@ -236,6 +236,7 @@ body {
   width: 100%; }
 
 .logo {
+  position: relative;
   margin: 0;
   color: #82f4d3;
   font-family: "Ubuntu", Arial, Helvetica, sans-serif;
@@ -244,6 +245,18 @@ body {
 
 .logo span {
   color: #000000; }
+
+.logo::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -6px;
+  transform: translateX(-110%);
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-image: url("./img/logo.svg");
+  background-repeat: no-repeat; }
 
 .flagship {
   display: flex;
