@@ -1,19 +1,82 @@
 .arrivals-item {
-
+  // box model
+  
 }
 
 .arrivals-item__image {
+    // positioning
+    position: relative;
+
     // box model
     display: inline-block;
-    width: 250px;
-    height: 305px;
+    flex-basis: 25%;
+    // width: 250px;
+    // height: 305px;
     margin-bottom: 60px;
 
     // typography
     text-align: center;
+}
+
+.arrivals-item__image:hover::before {
+    // visual
+    opacity: 1;
+}
+
+.arrivals-item__image:hover::after {
+    // visual
+    opacity: 0.8;
+}
+
+.arrivals-item__image::before{
+    content: "View Details";
+
+    // positioning
+    position: absolute;
+    left: 50%;
+    top: 50%; 
+    transform: translate(-50%,-50%);
+
+    // // box model
+    padding: 20px 10px;
+    max-width: 150px;
+    width: 50%;
+	margin: auto;
+
+    // typography
+    color: $mercury;
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: $mainFont;
+    letter-spacing: 0.15rem;
 
     // visual
-    background-color: #eeeded;
+    border: 1px solid $white;
+    opacity: 0;
+    transition: ease-in-out 0.15s;
+    z-index: 9;
+}
+
+.arrivals-item__image::after {
+    content: "";
+
+    // positioning
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+
+    // box model
+    height: 100%;
+    width: 100%;
+
+    // visual
+    background-color: $spray;
+    border: 10px solid $mercury;
+    opacity: 0;
+    transition: ease-in-out 0.2s;
+    z-index: 1;
 }
 
 .arrivals-item__image img {
@@ -21,6 +84,17 @@
     width: 100%;
     height: 100%;
     object-fit: contain;
+}
+
+.arrivals-item__details {
+    // positioning
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+
+    // box model
+    // display: none;
 }
 
 .arrivals-item__text {

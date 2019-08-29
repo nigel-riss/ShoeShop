@@ -1,8 +1,12 @@
 .button {
+    // positioning
+    position: relative;
+
     // box model
     display: inline-block;
     vertical-align: top;
-    min-width: 150px;
+    height: 40px;
+    width: 180px;
     margin-bottom: 20px;
     padding: 0 20px;
 
@@ -12,7 +16,7 @@
     font-size: 0.85rem;
     font-weight: 600;
     letter-spacing: 0.065rem;
-    line-height: 34px;
+    line-height: 38px;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
@@ -27,6 +31,28 @@
         line-height: 46px;
     }
 }
+
+.button::before {
+    content: "";
+
+    // positioning
+    position: absolute;
+    right: 5px;
+    top: 5px;
+
+    // box model
+    height: 40px;
+    width: 180px;
+
+    // visual
+    border: 2px solid $spray;
+}
+
+// .button:active {
+//     // visual
+//     transform: translate(-5px, 5px);
+//     transition: all 0.25s ease-out;
+// }
 
 .button a {
     // visual

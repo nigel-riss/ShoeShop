@@ -11,6 +11,11 @@
     background: linear-gradient(75deg, rgba(232,232,232,1) 50%, rgba(130,244,211,1) 50%);
 }
 
+.header__top {
+    // box model
+    padding-left: 150px;
+}
+
 .header__menu {
     // box model
     display: none;

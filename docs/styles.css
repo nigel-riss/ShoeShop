@@ -218,6 +218,9 @@ body {
   background: #e8e8e8;
   background: linear-gradient(75deg, #e8e8e8 50%, #82f4d3 50%); }
 
+.header__top {
+  padding-left: 150px; }
+
 .header__menu {
   display: none; }
 
@@ -309,9 +312,11 @@ body {
   padding-left: 130px; }
 
 .button {
+  position: relative;
   display: inline-block;
   vertical-align: top;
-  min-width: 150px;
+  height: 40px;
+  width: 180px;
   margin-bottom: 20px;
   padding: 0 20px;
   color: #000000;
@@ -319,7 +324,7 @@ body {
   font-size: 0.85rem;
   font-weight: 600;
   letter-spacing: 0.065rem;
-  line-height: 34px;
+  line-height: 38px;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
@@ -328,6 +333,15 @@ body {
   transition: all 0.25s ease-out; }
   .button--form {
     line-height: 46px; }
+
+.button::before {
+  content: "";
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  height: 40px;
+  width: 180px;
+  border: 2px solid #82f4d3; }
 
 .button a {
   text-decoration: none; }
@@ -374,17 +388,63 @@ body {
   justify-content: space-between; }
 
 .arrivals-item__image {
+  position: relative;
   display: inline-block;
-  width: 250px;
-  height: 305px;
+  flex-basis: 25%;
   margin-bottom: 60px;
-  text-align: center;
-  background-color: #eeeded; }
+  text-align: center; }
+
+.arrivals-item__image:hover::before {
+  opacity: 1; }
+
+.arrivals-item__image:hover::after {
+  opacity: 0.8; }
+
+.arrivals-item__image::before {
+  content: "View Details";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px 10px;
+  max-width: 150px;
+  width: 50%;
+  margin: auto;
+  color: #e9e9e9;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  letter-spacing: 0.15rem;
+  border: 1px solid #ffffff;
+  opacity: 0;
+  transition: ease-in-out 0.15s;
+  z-index: 9; }
+
+.arrivals-item__image::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #82f4d3;
+  border: 10px solid #e9e9e9;
+  opacity: 0;
+  transition: ease-in-out 0.2s;
+  z-index: 1; }
 
 .arrivals-item__image img {
   width: 100%;
   height: 100%;
   object-fit: contain; }
+
+.arrivals-item__details {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2; }
 
 .arrivals-item__name {
   margin: 0;
@@ -557,7 +617,6 @@ body {
   speak: none;
   font-style: normal;
   font-weight: normal;
-  font-size: 30px;
   font-variant: normal;
   text-transform: none;
   line-height: 1;
