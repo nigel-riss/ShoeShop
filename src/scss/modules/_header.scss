@@ -1,5 +1,7 @@
 .header {
     // box model
+    height: 100vh;
+    max-height: 900px;
     margin-bottom: 100px;
     padding-bottom: 90px;
     padding-left: 120px;
@@ -38,7 +40,7 @@
 
     // box model
     margin: 0 auto;
-    max-width: 515px;
+    max-width: 700px;
 }
 
 .header__image img {
