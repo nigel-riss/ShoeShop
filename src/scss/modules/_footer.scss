@@ -35,6 +35,14 @@
     color: $silver;
     text-align: right;
     text-decoration: none;
+
+    // visual
+    transition: ease-in-out 0.2s;
+}
+
+.footer__contact:hover {
+    // typography
+    color: $spray;
 }
 
 .footer__socials {

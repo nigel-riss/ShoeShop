@@ -1,6 +1,27 @@
 .arrivals-item {
   // box model
-  
+  width: 100%;
+  height: calc(56.25vw - 40px);
+  min-height: 180px;
+  margin: 0;
+
+  @include atTablet {
+      // box model
+      margin-bottom: 40px;
+    //   max-height: 340px;
+  }
+
+  @include atDesktopS {
+      // box model
+      flex-basis: calc(18% - 20px);
+      height: calc(25.54vw - 60px);
+      width: auto;
+  }
+
+  @include atDesktopL {
+      // box model
+      max-height: 460px;
+  }
 }
 
 .arrivals-item__image {

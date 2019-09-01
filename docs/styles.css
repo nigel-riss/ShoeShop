@@ -388,6 +388,23 @@ body {
   display: flex;
   justify-content: space-between; }
 
+.arrivals-item {
+  width: 100%;
+  height: calc(56.25vw - 40px);
+  min-height: 180px;
+  margin: 0; }
+  @media (min-width: 700px) {
+    .arrivals-item {
+      margin-bottom: 40px; } }
+  @media (min-width: 1000px) {
+    .arrivals-item {
+      flex-basis: calc(18% - 20px);
+      height: calc(25.54vw - 60px);
+      width: auto; } }
+  @media (min-width: 1500px) {
+    .arrivals-item {
+      max-height: 460px; } }
+
 .arrivals-item__image {
   position: relative;
   display: inline-block;
@@ -566,7 +583,11 @@ body {
   margin: 50px 0;
   color: #afafaf;
   text-align: right;
-  text-decoration: none; }
+  text-decoration: none;
+  transition: ease-in-out 0.2s; }
+
+.footer__contact:hover {
+  color: #82f4d3; }
 
 .footer-menu {
   margin: 0; }
@@ -579,7 +600,11 @@ body {
   margin: 0;
   color: #afafaf;
   font-family: "Poppins", Arial, Helvetica, sans-serif;
-  text-decoration: none; }
+  text-decoration: none;
+  transition: ease-in-out 0.2s; }
+
+.footer-menu__link:hover {
+  color: #82f4d3; }
 
 .form__cta {
   margin: 0;

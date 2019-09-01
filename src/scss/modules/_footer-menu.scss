@@ -21,4 +21,10 @@
 
     // visual
     text-decoration: none;
+    transition: ease-in-out 0.2s;
+}
+
+.footer-menu__link:hover {
+    // typography
+    color: $spray;
 }
