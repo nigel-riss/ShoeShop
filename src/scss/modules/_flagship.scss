@@ -8,6 +8,7 @@
 
 .flagship__wrapper {
     // box model
+    flex-basis: 45%;
     padding: 10px;
 
     // visual
@@ -23,7 +24,7 @@
     background-color: #eeeded;
 }
 
-.flagship_image img {
+.flagship__image img {
     // box model
     height: 100%;
     width: 100%;
@@ -34,7 +35,8 @@
     position: relative;
 
     // box model
-    width: 100%;
+    // width: 100%;
+    flex-basis: 40%;
 }
 
 .flagship__header {
