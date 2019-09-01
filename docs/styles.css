@@ -312,12 +312,18 @@ body {
   padding-left: 130px; }
 
 .button {
+  height: 44px;
+  width: 184px;
+  padding-top: 5px;
+  padding-left: 5px;
+  border: 2px solid #82f4d3; }
+
+.button__main {
   position: relative;
   display: inline-block;
   vertical-align: top;
   height: 40px;
   width: 180px;
-  margin-bottom: 20px;
   padding: 0 20px;
   color: #000000;
   font-family: "Poppins", Arial, Helvetica, sans-serif;
@@ -331,17 +337,12 @@ body {
   background-color: #82f4d3;
   border: 2px solid #82f4d3;
   transition: all 0.25s ease-out; }
-  .button--form {
-    line-height: 46px; }
+  .button__main--form {
+    line-height: 40px; }
 
-.button::before {
-  content: "";
-  position: absolute;
-  right: 5px;
-  top: 5px;
-  height: 40px;
-  width: 180px;
-  border: 2px solid #82f4d3; }
+.button__main:active {
+  transform: translate(-5px, -5px);
+  transition: all 0.25s ease-out; }
 
 .button a {
   text-decoration: none; }
