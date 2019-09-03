@@ -1,6 +1,6 @@
 .blog {
     // box model
-    margin-bottom: 100px;
+    margin-bottom: 190px;
     padding: 0 215px;
 }
 
@@ -19,11 +19,38 @@
 }
 
 .blog__image {
+    // positioning
+    position: relative;
 
+    // box model
+    max-width: 430px;
+
+    // visual
+    border: 10px solid $white;
+    box-shadow: 0px 0px 20px -10px rgba(0,0,0,0.75);
+}
+
+.blog__image::after {
+    content: '';
+
+    // positioning
+    position: absolute;
+    bottom: -100px;
+    right: -100px;
+    z-index: -1;
+
+    // box model
+    width: 295px;
+    height: 390px;
+
+    // visual
+    background-color: $spray;
 }
 
 .blog__image img {
-
+    // box model
+    width: 100%;
+    height: 100%;
 }
 
 .blog__descripton {
