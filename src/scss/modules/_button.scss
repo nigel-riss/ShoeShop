@@ -1,70 +1,50 @@
 .button {
-    // box model
-    height: 44px;
-    width: 184px;
-    padding-top: 5px;
-    padding-left: 5px;
-
-    // visual
-    border: 2px solid $spray;
-}
-
-.button__main {
     // positioning
     position: relative;
 
     // box model
     display: inline-block;
     vertical-align: top;
-    height: 40px;
-    width: 180px;
-    padding: 0 20px;
+    padding: 0 30px;
+
+    transform: translate(10px, 10px);
 
     // typography
-    color: $black;
-    font-family: $mainFont;
-    font-size: 0.85rem;
-    font-weight: 600;
-    letter-spacing: 0.065rem;
-    line-height: 38px;
-    text-align: center;
+    color: $shark;
+    font-weight: 700;
+    line-height: 44px;
     text-decoration: none;
-    text-transform: uppercase;
 
     // visual
-    background-color: $spray;
-    border: 2px solid $spray;
-    transition: all 0.25s ease-out;
-
-    &--form {
-        // typography
-        line-height: 40px;
-    }
-}
-
-// .button::before {
-//     content: "";
-
-//     // positioning
-//     position: absolute;
-//     right: 5px;
-//     top: 5px;
-
-//     // box model
-//     height: 40px;
-//     width: 180px;
-
-//     // visual
-//     border: 2px solid $spray;
-// }
-
-.button__main:active {
-    // visual
-    transform: translate(-5px, -5px);
+    background-color:$spray;
     transition: all 0.25s ease-out;
 }
 
-.button a {
+.button::before {
+    content: "";
+
+    // positioning
+    position: absolute;
+    z-index: -1;
+    left: -10px;
+    top: -10px;
+
+    // box model
+    display: block;
+    height: 100%;
+    width: 100%;
+
     // visual
-    text-decoration: none;
+    border: 1px solid $spray;
+    transition: all 0.25s ease-out;
+}
+
+.button:hover {
+    // positioning
+    transform: translate(5px, 5px);
+}
+
+.button:hover::before {
+    left: 0px;
+    top: 0px;
 }

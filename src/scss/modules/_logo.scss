@@ -3,7 +3,9 @@
     position: relative;
 
     // box model
+    // display: flex;
     margin: 0;
+    vertical-align: middle;
 
     // typography
     color: $spray;
@@ -19,16 +21,13 @@
 
 .logo::before {
     content: '';
-    // positioning
-    position: absolute;
-    left: 0;
-    top: -6px;
-    transform: translateX(-110%);
-
     // box model
-    display: block;
-    width: 40px;
-    height: 40px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 32px;
+    height: 32px;
+    margin-top: -5px;
+    margin-right: 5px;
 
     // visual
     background-image: url('./img/logo.svg');

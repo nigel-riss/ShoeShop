@@ -1,0 +1,51 @@
+.header-slider {
+    // positioning
+    position: relative;
+
+    // box model
+    height: 100%;
+}
+
+.header-slider__slide {
+
+}
+
+.header-slider__caption {
+    // positioning
+    position: absolute;
+}
+
+.header-slider__title {
+
+}
+
+.header-slider__button {
+
+}
+
+.header-slider__text {
+    // positioning
+    position: absolute;
+}
+
+.header-slider__image {
+    // positioning
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+
+    // box model
+    height: 100%;
+}
+
+.header-slider__image img {
+    // box model
+    height: 100%;
+    width: 100%;
+    border: 2px dashed fuchsia;
+
+    object-fit: contain;
+    object-position: center;
+}
