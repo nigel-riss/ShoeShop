@@ -7,10 +7,11 @@ html(lang="en")
         title ShoeShop
         link(rel="stylesheet", href="./styles.css")
     body
-        .container
-            header.header
+        header.header
+            .header__container
                 .header__top
-                    a.logo(href="#") Sho<span>e</span> Shop
+                    .header__logo
+                        a.logo(href="#") Sho<span>e</span> Shop
 
                     .header__menu.header__menu--hidden
                         nav.main-nav
@@ -21,122 +22,123 @@ html(lang="en")
                                 li.main-nav__item: a(href="#advantages").main-nav__link Преимущества
                                 li.main-nav__item: a(href="#statistics").main-nav__link Статистика
 
-                    .menu-button.menu-button--close
-                        .menu-button__middle
+                    .header__menu-button
+                        .menu-button.menu-button--close
+                            .menu-button__middle
 
-                .header__content
-                    .header__image: img(src="./img/shoe.png", alt="")
+                .header__slider
+                    .header-slider
+                        .header-slider__slide
+                            .header-slider__caption
+                                h2.header-slider__title Nike
+                                a.header-slider__button(href="#") Shop By Brands
+                            p.header-slider__text Nike, originally known as Blue Ribbon Sports was founded by University of Oregon track athlete Phil Knight.
+                            .header-slider__image: img(src="./img/shoe.png", alt="")
 
-                    .header__caption
-                        .header-caption
-                            h1.header-caption__title Nike
-                            .header-caption__button
-                                .button
-                                    a(href="#").button__main Shop by brands
-
-                    aside.header__aside
-                        .header-aside
-                            .header-aside__left
-                                p.header-aside__text Nike, originally known as Blue Ribbon Sports was founded by University of Oregon track athlete Phil Knight.
+                        //- .header-slider__slide
+                            .header-slider__caption
+                            //-     h2.header-slider__title Nike
+                            //-     a.header-slider__button(href="#") Shop By Brands
+                        //-     p.header-slider__desc 
+                        //-     .heder-slider__image: img(src="./img/shoe.png", alt="")
                             
-                            .header-aside__right
-                                ul.socials
-                                    li.socials__item
-                                        a.socials__icon.icon--twitter(href="https://twitter.com/")
-                                    li.socials__item
-                                        a.socials__icon.icon--facebook(href="https://facebook.com/")
-                                    li.socials__item
-                                        a.socials__icon.icon--inst(href="https://instagram.com/")
-                                    li.socials__item
-                                        a.socials__icon.icon--vk(href="https://vk.com/")
+                .header__socials
+                    ul.socials
+                        li.socials__item
+                            a.socials__icon.icon--twitter(href="https://twitter.com/")
+                        li.socials__item
+                            a.socials__icon.icon--facebook(href="https://facebook.com/")
+                        li.socials__item
+                            a.socials__icon.icon--inst(href="https://instagram.com/")
+                        li.socials__item
+                            a.socials__icon.icon--vk(href="https://vk.com/")
 
-            main
-                section.flagship
-                    .flagship__wrapper
-                        .flagship__image: img(src="./img/flagship.jpg", alt="")
+        main
+            section.flagship
+                .flagship__wrapper
+                    .flagship__image: img(src="./img/flagship.jpg", alt="")
 
-                    .flagship__content
-                        .flagship__header
-                            header.shoeshop-header
-                                h2.shoeshop-header__title Nike Air Force One MID id
-                                p.shoeshop-header__text Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward
-
-                            .flagship__button
-                                .button
-                                    a(href="#").button__main View Now
-
-                section.arrivals
-                    .arrivals__header
+                .flagship__content
+                    .flagship__header
                         header.shoeshop-header
-                            h2.shoeshop-header__title Popular Arrivals
+                            h2.shoeshop-header__title Nike Air Force One MID id
+                            p.shoeshop-header__text Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward
 
-                    .arrivals__content
-                        .arrivals__items
-                            .arrivals-item
-                                a.arrivals-item__image(href=""): img(src="./img/shoe-1.jpg", alt="")
-                                .arrivals-item__text
-                                    p.arrivals-item__name Nike shoes &ensp;<span>Shop outdoors</span>
-                                    p.arrivals-item__price $ 125
+                        .flagship__button
+                            .button
+                                a(href="#").button__main View Now
 
-                            .arrivals-item
-                                a.arrivals-item__image(href=""): img(src="./img/shoe-2.jpg", alt="")
-                                .arrivals-item__text
-                                    p.arrivals-item__name Nike shoes &ensp;<span>Shop outdoors</span>
-                                    p.arrivals-item__price $ 260
+            section.arrivals
+                .arrivals__header
+                    header.shoeshop-header
+                        h2.shoeshop-header__title Popular Arrivals
 
-                            .arrivals-item
-                                a.arrivals-item__image(href=""): img(src="./img/shoe-3.jpg", alt="")
-                                .arrivals-item__text
-                                    p.arrivals-item__name Nike shoes&ensp; <span>Shop outdoors</span>
-                                    p.arrivals-item__price $ 145
+                .arrivals__content
+                    .arrivals__items
+                        .arrivals-item
+                            a.arrivals-item__image(href=""): img(src="./img/shoe-1.jpg", alt="")
+                            .arrivals-item__text
+                                p.arrivals-item__name Nike shoes &ensp;<span>Shop outdoors</span>
+                                p.arrivals-item__price $ 125
 
-                            .arrivals-item
-                                a.arrivals-item__image(href=""): img(src="./img/shoe-4.jpg", alt="")
-                                .arrivals-item__text
-                                    p.arrivals-item__name Nike shoes &ensp;<span>Shop outdoors</span>
-                                    p.arrivals-item__price $ 350
+                        .arrivals-item
+                            a.arrivals-item__image(href=""): img(src="./img/shoe-2.jpg", alt="")
+                            .arrivals-item__text
+                                p.arrivals-item__name Nike shoes &ensp;<span>Shop outdoors</span>
+                                p.arrivals-item__price $ 260
 
-                section.collection
-                    .collection__content
-                        .collection__header
-                            header.shoeshop-header
-                                h2.shoeshop-header__title Pre- Fall Collections
-                                p.shoeshop-header__text Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will
+                        .arrivals-item
+                            a.arrivals-item__image(href=""): img(src="./img/shoe-3.jpg", alt="")
+                            .arrivals-item__text
+                                p.arrivals-item__name Nike shoes&ensp; <span>Shop outdoors</span>
+                                p.arrivals-item__price $ 145
 
-                            .collection__button
-                                .button
-                                    a(href="#").button__main Viev details
-                        
-                        .collection__image: img(src="./img/girl.png", alt="")
+                        .arrivals-item
+                            a.arrivals-item__image(href=""): img(src="./img/shoe-4.jpg", alt="")
+                            .arrivals-item__text
+                                p.arrivals-item__name Nike shoes &ensp;<span>Shop outdoors</span>
+                                p.arrivals-item__price $ 350
 
-                section.quotes
-                    .quotes__items
-                        .quote-item
-                            h2.qoute-item__title We Thought of you
-                            p.quote-item__text Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.
-                            p.quote-item__author Nandy Sweety
-                            p.quote-item__position Ui Designer
-
-                    .quotes__prev
-                    .qutes__next
-
-                section.blog
-                    .blog__header
+            section.collection
+                .collection__content
+                    .collection__header
                         header.shoeshop-header
-                            h2.shoeshop-header__title Latest Blog
+                            h2.shoeshop-header__title Pre- Fall Collections
+                            p.shoeshop-header__text Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will
 
-                    .blog__content
-                        .blog__image: img(src="./img/blog-photo.jpg", alt="")
+                        .collection__button
+                            a(href="#").button View details
+                    
+                    .collection__image: img(src="./img/girl.png", alt="")
 
-                        .blog__descripton
-                            h3.blog__title Colourful Offer ;
-                            p.shoeshop-header__text Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive 
+            section.quotes
+                .quotes__items
+                    .quote-item
+                        h2.qoute-item__title We Thought of you
+                        p.quote-item__text Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.
+                        p.quote-item__author Nandy Sweety
+                        p.quote-item__position Ui Designer
 
-                            .blog__button
-                                .button
-                                    a(href="#").button__main Read more
+                .quotes__prev
+                .qutes__next
 
-            footer.footer
+            section.blog
+                .blog__header
+                    header.shoeshop-header
+                        h2.shoeshop-header__title Latest Blog
+
+                .blog__content
+                    .blog__image: img(src="./img/blog-photo.jpg", alt="")
+
+                    .blog__descripton
+                        h3.blog__title Colourful Offer ;
+                        p.shoeshop-header__text Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive 
+
+                        .blog__button
+                            .button
+                                a(href="#").button__main Read more
+
+        footer.footer
                 .footer__content
                     .footer__logo
                         a.logo(href="#") Sho<span>e</span> Shop
